@@ -1,0 +1,209 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "dexy",
+  "name": "Dexy",
+  "repo": "https://github.com/kushti/dexy-stable",
+  "category": "stablecoin",
+  "by": "ergoscan",
+  "note": "Dexy stablecoin framework: USE (USD, oracle USD v2) and DexyGold (XAU, oracle XAU/ERG).",
+  "contracts": [
+    {
+      "name": "Dexy LP Swap",
+      "kind": "contract",
+      "match": {
+        "token": "ef461517a55b8bfcd30356f112928f3333b5b50faf472e8374081307a09110cf"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L37",
+      "note": "Swap contract shared by the USE and DexyGold pools"
+    },
+    {
+      "name": "DexyGold Arbitrage Mint",
+      "kind": "contract",
+      "match": {
+        "token": "3fefa1e3fef4e7abbdc074a20bdf751675f058e4bcce5cef0b38bb9460be5c6a"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L101",
+      "note": "Mints when the pool price is above the oracle"
+    },
+    {
+      "name": "DexyGold Bank",
+      "kind": "contract",
+      "match": {
+        "token": "75d7bfbfa6d165bfda1bad3e3fda891e67ccdcfc7b4410c1790923de2ccc9f7f"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L91",
+      "note": "Holds the stablecoin reserve; mints against the oracle price"
+    },
+    {
+      "name": "DexyGold Extract to Future",
+      "kind": "contract",
+      "match": {
+        "token": "615be55206b1fea6d7d6828c1874621d5a6eb0e318f98a4e08c94a786f947cec"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L99",
+      "note": "Moves stablecoins out of the pool when it trades below the oracle"
+    },
+    {
+      "name": "DexyGold FreeMint",
+      "kind": "contract",
+      "match": {
+        "token": "74f906985e763192fc1d8d461e29406c75b7952da3a89dbc83fe1b889971e455"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L103",
+      "note": "Limited minting at the oracle price"
+    },
+    {
+      "name": "DexyGold Intervention",
+      "kind": "contract",
+      "match": {
+        "token": "6597acef421c21a6468a2b58017df6577b23f00099d9e0772c0608deabdf6d13"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L97",
+      "note": "Bank buys or sells in the pool to support the peg"
+    },
+    {
+      "name": "DexyGold LP Mint",
+      "kind": "contract",
+      "match": {
+        "token": "10b755771f7253cff9727a9ca54bb2867e22b1b236657051c47ea9556c517e10"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L83",
+      "note": "Adds liquidity to the pool"
+    },
+    {
+      "name": "DexyGold LP Pool",
+      "kind": "contract",
+      "match": {
+        "token": "905ecdef97381b92c2f0ea9b516f312bfb18082c61b24b40affa6a55555c77c7"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L81",
+      "note": "ERG/stablecoin liquidity pool box"
+    },
+    {
+      "name": "DexyGold LP Redeem",
+      "kind": "contract",
+      "match": {
+        "token": "471057efea32bf406d529902217844a258d3d6bedfcdcd3cfbab01872cc0b74c"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L84",
+      "note": "Removes liquidity from the pool"
+    },
+    {
+      "name": "DexyGold Payout",
+      "kind": "contract",
+      "match": {
+        "token": "26ef992a598eadfddabfd3c51509fb277b075c943b17199407f68c467b9de1ae"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L105",
+      "note": "Pays bank fees out"
+    },
+    {
+      "name": "DexyGold Tracking",
+      "kind": "contract",
+      "match": {
+        "token": "ff5269b5cdd037ea391b7210e28aeae0034ef670b9c4263995fe2a920e8d5a1d"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L87",
+      "note": "Tracks how long the pool price stays off the oracle (95%, 98%, 101%)"
+    },
+    {
+      "name": "GORT Dev Emission",
+      "kind": "contract",
+      "match": {
+        "token": "bb484bb7fea08b15861e27cb203a13069082befb05f5437cae71237d9c5c6ac3"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/a4e8bcf575b3e3c1c9f46498dd1211673d76ee93/src/main/scala/dexy/chainutils/DexySpec.scala#L72",
+      "note": "GORT emission to the developers"
+    },
+    {
+      "name": "USE Arbitrage Mint",
+      "kind": "contract",
+      "match": {
+        "token": "c79bef6fe21c788546beab08c963999d5ef74151a9b7fd6c1843f626eea0ecf5"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L56",
+      "note": "Mints when the pool price is above the oracle"
+    },
+    {
+      "name": "USE Bank",
+      "kind": "contract",
+      "match": {
+        "token": "78c24bdf41283f45208664cd8eb78e2ffa7fbb29f26ebb43e6b31a46b3b975ae"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L46",
+      "note": "Holds the stablecoin reserve; mints against the oracle price"
+    },
+    {
+      "name": "USE Extract to Future",
+      "kind": "contract",
+      "match": {
+        "token": "bc685d6ad1703ba5775736308fd892807edc04f48ba7a52e802fab241a59962c"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L54",
+      "note": "Moves stablecoins out of the pool when it trades below the oracle"
+    },
+    {
+      "name": "USE FreeMint",
+      "kind": "contract",
+      "match": {
+        "token": "40db16e1ed50b16077b19102390f36b41ca35c64af87426d04af3b9340859051"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L58",
+      "note": "Limited minting at the oracle price"
+    },
+    {
+      "name": "USE Intervention",
+      "kind": "contract",
+      "match": {
+        "token": "dbf655f0f6101cb03316e931a689412126fefbfb7c78bd9869ad6a1a58c1b424"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L52",
+      "note": "Bank buys or sells in the pool to support the peg"
+    },
+    {
+      "name": "USE LP Mint",
+      "kind": "contract",
+      "match": {
+        "token": "2cf9fb512f487254777ac1d086a55cda9e74a1009fe0d30390a3792f050de58f"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L38",
+      "note": "Adds liquidity to the pool"
+    },
+    {
+      "name": "USE LP Pool",
+      "kind": "contract",
+      "match": {
+        "token": "4ecaa1aac9846b1454563ae51746db95a3a40ee9f8c5f5301afbe348ae803d41"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L36",
+      "note": "ERG/stablecoin liquidity pool box"
+    },
+    {
+      "name": "USE LP Redeem",
+      "kind": "contract",
+      "match": {
+        "token": "1bfea21924f670ca5f13dd6819ed3bf833ec5a3113d5b6ae87d806db29b94b9a"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L39",
+      "note": "Removes liquidity from the pool"
+    },
+    {
+      "name": "USE Payout",
+      "kind": "contract",
+      "match": {
+        "token": "a2482fca4ca774ef9d3896977e3677b031597c6e312b0c10d47157bb0d6ed69f"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L60",
+      "note": "Pays bank fees out"
+    },
+    {
+      "name": "USE Tracking",
+      "kind": "contract",
+      "match": {
+        "token": "57af5c7446d419e98e2e6fbd4bce9029cd589f8094686c457902feb472f194ec"
+      },
+      "source": "https://github.com/kushti/dexy-stable/blob/c14c61af9c8a6779349b07c45fb2045caffeb761/src/main/scala/dexy/chainutils/UseSpec.scala#L42",
+      "note": "Tracks how long the pool price stays off the oracle (95%, 98%, 101%)"
+    }
+  ]
+}

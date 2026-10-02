@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "phoenix",
+  "name": "Phoenix Finance",
+  "repo": "https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts",
+  "category": "other",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Phoenix hodlComet10 Bank",
+      "kind": "contract",
+      "match": {
+        "token": "0a9a8f5e7226222af86769e0a6a0455e53b9295f600a3e8a6107bca1d6aaf35d"
+      },
+      "source": "https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts/blob/c36e676a917e662f7587266444c646a9e25852bf/hodlToken/contracts/bank_contract/v1/ergoscript/phoenix_v1_hodltoken_bank.es",
+      "note": "Bank singleton Phoenix hodlComet10 Bank Singleton"
+    },
+    {
+      "name": "Phoenix hodlERG Bank",
+      "kind": "contract",
+      "match": {
+        "address": "TZPn3oLcgqXcSLXXguTKqW6TXsMC9brGikXUrMfygBTPdeLgbKLkWj63EQ8rUQQodcVveRjDSigJ3CVd8yjeBwY4jQLr6ZMxDXTPn7V42zNTskCp18maQwN3p4S82tezBcJnTdWoSzeQVbqhARUyNNFjKdyKc6Z49XKkQL7jktSJcG4fnFayBqPZRhQMEB1ZZ12bU2rX5SkQj5jE65N2ZFCTi6WbNeNWWZQYPtZv8fGVLmNdhxgg968LYPLNLBJVa7rUo6Nyce4CszBYq44bD14rvKMZXq1zQ6ZjkFRfmXjDFg92MsXGuENuZdPnTgKJ7Cdct3EP4UFjgZx1PQSauX8own7pPEAf9MBRdF84WNqo9cbZhvrhUVvispD6bP2AoCZWKkrppi1atoV22RPxbouC1rkpsKW287HAXxfiwP8VKVDRUi1aVjRvFP13RpyrBf9cu1z44xnJwTC9ui38XPAUjz4DWp87mGh6JC54z2Mqyk2nEaai7nBP4fPW53XSExd5AK5JC9fVyfdrRtiR5ADkcc2yqXrF"
+      },
+      "source": "https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts/blob/c36e676a917e662f7587266444c646a9e25852bf/hodlERG/contracts/bank_contract/v1/ergoscript/phoenix_v1_hodlerg_bank.es",
+      "note": "Bank boxes of the hodlERG banks (hodlERG3 and others): ERG reserve and the hodl token supply"
+    },
+    {
+      "name": "Phoenix hodlToken Bank",
+      "kind": "contract",
+      "match": {
+        "template": "5811576e4c7dff58cf55c7f3808638076659183cdbf23d00bf92b4d157e58c78"
+      },
+      "source": "https://github.com/PhoenixErgo/phoenix-hodlcoin-contracts/blob/c36e676a917e662f7587266444c646a9e25852bf/hodlToken/contracts/bank_contract/v1/ergoscript/phoenix_v1_hodltoken_bank.es",
+      "note": "hodlToken banks such as hodlComet"
+    }
+  ]
+}

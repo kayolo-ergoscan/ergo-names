@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "ergomixer",
+  "name": "ErgoMixer",
+  "repo": "https://github.com/ergoMixer/ergoMixBack",
+  "category": "privacy",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "ErgoMixer Fee Emission",
+      "kind": "contract",
+      "match": {
+        "address": "4B8vRwhxhAJb8TuN4RZpBeLmAkQUtf7a4QaYqqSCZAQHjyhzgVLGiFTPp9CaZRbssRnVHAzqUKtBBCWjfMSxpi1Z59H7sj1E8o6XFqYCRYFp1n2aC6tYptFLrrX3c1jXBhcsS7NNU5NLHSuCNC6bDf9KYhxfgQTtYkozrGk2qzB3aB8mmaC8ZHaAfzvQmSzcxGwtTyquk4yfeR9tsvrvhGPeyv6Ys74Q3VqQoVkuSMq21gRY5wgBz4gq6tTBY1Xv4BkHoFQm2wx8TWQc8Rof81DCePanX598Z9ZJzaDLnT5TDjQpECKPXvuuxLivbbFjtc4FZ65xTSHGk2uHsohRAMrMiug5aVa7UXwoRRLomvCrg8MbyowkuiQXcZWu8ue3QBTLuL5yy6yqxs2SYDPiFHqJhU3ag94Tb5Q2bPaJcAgomJehtn9BB5L9GoLe6Mx9Jti6F1WXgrGcuHeBQnXpiS8pRMN845AxseExzyvksmj4gyXEJqgookbneHtPuDW3QefeWH4LH13AvmXhm8QFTYdAFRuhXMBwJJbXL1yBcLE4nexa7d2AY7Hndr7gfecxRY4UnypdpLnpTTec5vEppaDrEx6KQ4gdeiDyJLmJCGHeB"
+      },
+      "source": "https://github.com/ergoMixer/ergoMixBack/blob/6f1241d92b7572d881a0fe935fff5ca7cc66ffd9/mixer/app/mixinterface/TokenErgoMix.scala#L100",
+      "note": "Pays mixing fees; R4 holds the max fee"
+    },
+    {
+      "name": "ErgoMixer Full Mix",
+      "kind": "contract",
+      "match": {
+        "address": "2kpyq1fiKFRACqTBYLqT4BNGfnrym226pPanSzftuVJdWmxAKncZScWcY2XkJXLdFFKXcqy7zLB8LVpHkaXgyAJkjTC4LXxss6tMbL7ZqEpwj5oGhv1q2FbsCab2KR2RdWhrwWSpC6qXXR6srcbve7c5ni8JQhWQKZdCqiuWxTXyapsTE1mB459YgLcPBBrPmA8qdudEToo9QVWXPSwXTGq3Uxod5V5JaBjWPcPi7UPMR1J9Y5guSCVxbLavcRnPxoxtgouFGimPcYxpMd5Vc"
+      },
+      "source": "https://github.com/ergoMixer/ergoMixBack/blob/6f1241d92b7572d881a0fe935fff5ca7cc66ffd9/mixer/app/mixinterface/TokenErgoMix.scala#L18",
+      "note": "Mixed boxes: spendable by the owner, R4-R7 hold the mix round"
+    },
+    {
+      "name": "ErgoMixer Half Mix",
+      "kind": "contract",
+      "match": {
+        "address": "8D5yrk3J6uxm7L7dDs8py4NAigZYo4znAqEUx8kN3ERM4yDoRzKKUda5zY8vnjpCjx3bZFVYp4Cz8y4Gbkr7VhWgSXwtLZixzw4eB41FzqNFS3PM2Erf73kLLyyCf1BG5di7CY7RDW22KHQV3LNc9HFqtGVbNfmzf29XWTDGBiMhP5phBfRN4VfcUwTnUPMJ9bs4oa3D2LJZNRMVnccJvxmVUWSpwZuchX91Qv1B9a7zpS6dAed5WHyt5NzKZAgfUjxf8rHaTN6yT3QhekpxRqAa33CFbDMZLeuVqrS9B9CzLRttb8f6bmDTMfxpznmftsXRw9MjmbtxTNcNzu4u369Puga2J1ZcM6SGLeuwqvFQLeUgLHNKVNeFncfT1SW4FYCeZSXPBfQ75zgwE5csCPiM1vvvQ8d7j77XwoNnArjt19W23uk3Ki7vm1TV5p8Qcbu4YKA8CTZ8tSGQKB68KQrdavY7G5F7D8bC527AYhE2GdDSACS9MvZF2YWnrzepJNMyQbKU7diX3grR1bVaX6RA3NwTGtK6HiYZNSQWdXUmsbZ3xX7xjoqWkSDFw"
+      },
+      "source": "https://github.com/ergoMixer/ergoMixBack/blob/6f1241d92b7572d881a0fe935fff5ca7cc66ffd9/mixer/app/mixinterface/TokenErgoMix.scala#L39",
+      "note": "Boxes waiting for a partner to mix with"
+    },
+    {
+      "name": "ErgoMixer Token Emission",
+      "kind": "contract",
+      "match": {
+        "address": "2mBWMdKsUAa73zuGrwJTW9SPWrTCNq6Cee8gGhorrwdsyHRiBnPUujMhYTiBdRQmhhyGZdYsjjpoM4vVPtwyGzzUWKAxgucqwMQYqFX9RuT4uiHAPon2Bw4QrUXWsi6LtFrPsSyrubBpv6NuQ2Emh87zusUrb3PBxzFez9xqmL5ycMpbzXYFEr7kxiqDHyyweEmqkPfrntKS3G3ssonduZSwRKonLXtEJBEa4DiHgfgd43Uz5phAS8ng2BjWGjQKpTvpDvw536LuEdz3JNhuYn3tANCo5JGd1kKNYx1dm9zMcW8XQEiZCtGaFd4REQAa4xdL8RWHvLhjPnDNe8H2MePXZqQGVsuE4y67MTKvzQGe4SbWMJJ5zAkom4ehyc4gZA9zEZvamEF2vEu8LRumHbCNRmDVBMzqm8UnwauU9mFPXN4VAcMjXUdhJoyn8UrDQvBZL2izDXpsQxccpot7J5n5eQ2dnGjCwTkLJMNc7paaDWtExbdpF3iYhpstGzctD6PuCKZx8JrbwJxKLUVkGLDnvXruYn4HwNq1izyr64E7vVomuykGZWiLN8zTo3NiPc28nzr48w54wRvQ63EKtSZzsNYUXeqQ4Vh4nKHMV5BpfwPUPbdRiiZ5P5avMK9NWjpLfDrbMLP18WPNK8RVL3837Xw23WUXo4ZL6vNFYBW6QDsqCtWvQiWP7xwnQig4tJaS9WwbVpbbpBNkJHG8xzNBUNUbXHPCqMh2LGQTQvoEkzmZwNNRUgt7hu6SvfiXe6i5LFA5WsWWqY9ndLm72wdYZvo8eYA2PZdsxja2AcFdCmqVesrgMAh9Vb6bhQUZK1haXdkyJfdEkN5doFHBYFnvJimi8SzENbE2JUwTyAYaTr9TP57aSTHCU2kx2izBEsWhuM3NcxCqAJFAwACQ3QAw7QFErfLLXHHC3nvGXnDhMn9JhzmFDFV34"
+      },
+      "source": "https://github.com/ergoMixer/ergoMixBack/blob/6f1241d92b7572d881a0fe935fff5ca7cc66ffd9/mixer/app/mixinterface/TokenErgoMix.scala#L72",
+      "note": "Sells mixing tokens; R4 batch prices, R5 rate"
+    }
+  ]
+}
