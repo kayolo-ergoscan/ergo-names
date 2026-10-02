@@ -50,7 +50,9 @@ and on the ErgoScan box page.
 ## Add your project
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), add `projects/<id>.json`, run `node scripts/validate.mjs`, open a pull request.
-No GitHub workflow of your own? [Suggest a name](../../issues/new?template=name-request.yml) with the form and we write the file.
+No GitHub workflow of your own? [Suggest a name](../../issues/new?template=name-request.yml) with the form:
+a bot turns it into a pull request and reports the checks, a maintainer reviews the evidence and merges.
+ErgoScan loads `main` every 15 minutes.
 
 ## How names are shown
 

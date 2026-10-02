@@ -12,6 +12,12 @@ The team behind a project, or anyone who can point to public evidence. Team subm
 4. Run `node scripts/validate.mjs` (Node 20+, no install).
 5. Open a pull request. CI repeats the checks and asks ErgoScan whether each address, template or token exists on chain.
 
+## Without a pull request
+
+Open the [Suggest a name](../../issues/new?template=name-request.yml) form. A bot drafts the entry, runs the same
+checks, and opens a pull request that closes your issue, or replies with what to fix. A maintainer still reviews it.
+A 64-hex value is read as an NFT id when such a token exists (it must be an NFT), otherwise as a template hash.
+
 ## Rules for entries
 
 - **Evidence.** Every contract has a `source`: an https link to public code, a release, or docs where this exact

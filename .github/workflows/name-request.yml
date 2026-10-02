@@ -1,0 +1,102 @@
+name: name request
+
+# A "Suggest a name" issue becomes a pull request. A maintainer still reviews and merges.
+# Issue text is only data: it reaches git and node as argv, never as shell.
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: name-request-${{ github.event.issue.number }}
+
+jobs:
+  draft:
+    if: github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const n = issue.number;
+            const run = (cmd, args, env = {}) =>
+              exec.getExecOutput(cmd, args, { ignoreReturnCode: true, silent: true, env: { ...process.env, ...env } });
+            const say = (body) => github.rest.issues.createComment({ ...context.repo, issue_number: n, body });
+
+            const draft = await run("node", ["scripts/issue-to-entry.mjs", process.env.GITHUB_EVENT_PATH]);
+            let d;
+            try {
+              d = JSON.parse(draft.stdout.trim().split("\n").pop());
+            } catch {
+              d = { ok: false, error: "the form could not be read" };
+            }
+            if (d.skip) return;
+
+            const open = await github.paginate(github.rest.pulls.list, { ...context.repo, state: "open", per_page: 100 });
+            if (open.some((p) => p.head.ref.startsWith(`name-request/${n}-`))) return;
+
+            if (!d.ok) {
+              await say(`Could not draft this name: ${d.error}.\n\nOpen a new issue with the fix. A maintainer can also re-run this by removing and adding the \`name request\` label.`);
+              return;
+            }
+
+            const branch = `name-request/${n}-${context.runId}`;
+            await run("git", ["config", "user.name", "github-actions[bot]"]);
+            await run("git", ["config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"]);
+            await run("git", ["checkout", "-b", branch]);
+            await run("git", ["add", "projects"]);
+            await run("git", ["commit", "-m", `Name request #${n}: ${d.entry.name}`]);
+
+            const v = await run("node", ["scripts/validate.mjs"], {
+              BASE_REF: "origin/main",
+              PR_AUTHOR: issue.user.login,
+              CHAIN_CHECK: "1",
+            });
+            const report = `${v.stdout}\n${v.stderr}`
+              .split("\n")
+              .filter((l) => /^(error|warning)\s/.test(l) || / projects, /.test(l))
+              .join("\n");
+            if (v.exitCode !== 0) {
+              await say("The drafted entry does not pass the checks:\n\n```\n" + report + "\n```");
+              return;
+            }
+
+            const push = await run("git", ["push", "origin", branch]);
+            if (push.exitCode !== 0) {
+              core.setFailed(push.stderr);
+              return;
+            }
+            try {
+              const pr = await github.rest.pulls.create({
+                ...context.repo,
+                head: branch,
+                base: "main",
+                title: `Name: ${d.entry.name}`,
+                body: [
+                  `Closes #${n}.`,
+                  "",
+                  `Drafted from the issue form. ${d.created ? "New project file" : "Added to"} \`${d.file}\`.`,
+                  `Submitted by @${issue.user.login} (${d.team ? "project team" : "user or researcher"}).`,
+                  "",
+                  "```",
+                  report,
+                  "```",
+                  "",
+                  "A maintainer checks the evidence link before merging.",
+                ].join("\n"),
+              });
+              await say(`Drafted ${pr.data.html_url}. A maintainer will check the evidence and merge.`);
+            } catch (e) {
+              await say(`The entry is on branch \`${branch}\`, but the bot could not open a pull request (${e.message}). A maintainer opens it by hand.`);
+            }
