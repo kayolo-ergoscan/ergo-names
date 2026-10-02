@@ -185,12 +185,15 @@ if (process.env.CHAIN_CHECK === "1") {
       const m = e?.match ?? {};
       try {
         if (m.address) {
-          const r = await fetch(`${API}/addresses/${m.address}`);
+          const r = await fetch(`${API}/addresses/${m.address}?lists=0`);
           if (r.status === 400) err(f, `contracts[${i}]: ErgoScan says this is not a valid address`);
-          else if (r.ok && !(await r.json()).firstTs) warn(f, `contracts[${i}]: address has no transactions yet`);
+          else if (r.ok && !((await r.json()).pagination?.txs?.total > 0)) warn(f, `contracts[${i}]: address has no transactions yet`);
         } else if (m.token) {
           const r = await fetch(`${API}/tokens/${m.token}`);
           if (r.status === 404) err(f, `contracts[${i}]: token id not found on chain`);
+          else if (r.ok && String((await r.json()).emissionAmount) !== "1") {
+            err(f, `contracts[${i}]: a token anchor is an NFT (emission 1); this token also sits in wallets`);
+          }
         } else if (m.template) {
           const r = await fetch(`${API}/boxes/byErgoTreeTemplateHash/${m.template}?limit=1`);
           const j = r.ok ? await r.json() : null;
