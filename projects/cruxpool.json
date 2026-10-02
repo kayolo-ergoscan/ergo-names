@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "cruxpool",
+  "name": "CruxPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "CruxPool miner reward 1iBFCg",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaU8f31ccHvPs4tHubY5F1UrE4CK32f4MYtAF2eqJzCpxYzcfyYcenqNMFNAVEmEP1iBFCg"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "CruxPool miner reward Auhbau",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaUznQqpvAYEatWR92KVHeZpaf3Y2sPRmG3M6aio8iQSgPjXnPmHvCgzWHuvHnkJTAuhbau"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://cruxpool.com/ergo"
+}

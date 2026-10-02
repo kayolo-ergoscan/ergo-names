@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "whalesburg",
+  "name": "Whalesburg",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Whalesburg miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQqdrVnH9cfkKk7V77pSi2BtbbeCiQF6aSK5vv32WAmRG7aLeUzNaMLYhy6aQb6fG9MzNS"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://whalesburg.com"
+}

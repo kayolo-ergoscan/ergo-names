@@ -1,0 +1,110 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "rosen-bridge",
+  "name": "Rosen Bridge",
+  "url": "https://rosen.tech",
+  "repo": "https://github.com/rosen-bridge",
+  "category": "bridge",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Rosen Cold",
+      "kind": "contract",
+      "match": {
+        "address": "HNJiaJVyw1qtkiuQYxDTjaA8rmogotVzADinCt5qqavoyoREWM27WAp6f9Y79meFcMoJLt3yr8nsWC5xU5474ojCxE7VweGpd9sLz79VrSiyu7zBjBXPjgGLFZdJAEJhsH8A4y924MVZa7D9te6t3FUiLcpyTbrvTBhD7SpnD6hUjbGszCEGf1fRX1SmWZikeXcJEkfej42dPRimT6Fw423XAc9Tbeih8ZW8x7f5Y7y8frF5kxEdw998JdLU6UzPSwhrDjfKhySqmssQeQxCFwb19PMCB8ZZtx2mGwczr2H12Yi3hnEWn9ArqRqKWip24pJgm6e4Ky7n7BzGRRTmDtcA2EGH3zEVzpRH6aNSHE1MJ51dbCZSNFnRJfk3vxenkSevCfvEMfn5KyQP9wPU5foZACuHX8TQXvVUe1va3HXJFwCm74gxRssBy61GcYdwVbtxykPrw3t6aDX7c46BejsXvEaz5Ydcu7U8MJCoYia9pZ6zkjAj8d7Su12DMK1aLkBxw4vY2zQYc"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-side cold. ergo.addresses.cold in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Commitment",
+      "kind": "contract",
+      "match": {
+        "address": "5ivrmzxYa2fPRuSMsFA3at4RrZhv9SHi17B1UoU74JNL1m8YWnxRs8UfifV8VYjLbifEAczBEo1W2mU7SbeDYRn5HphWf2uvpeHgptESPrYWUmKg9QbaPL8du1i1dJJPWUTVNZsMaWkPSadzazX5uHqAX1bssGJGg75uqVdW1jxdEmixZgU68JnrQdyJybjeFuD2qAxyCYBrW9KHBwMvuzjyUHmF9VhvzFuaWs1Cxr5Jk3tXT6GeTuehauFy5Nf6RuWYabqxHjyKoaNLAQ995CF91wAXTVfH3z9JQuxS3kiyBDCRqfpK5y3wn2bbYJESNkK3DE8idbyNYUD72xipwcD7t29GUMx64wDHYLiTKZNDvTvbZ2i7x8EusAFbJMVppbnfWPzjFyq1THwPsqh9ZscJUeXSC4xKovwYF1oDA3ESkxXYJESwhixwb4MbveLor65rj73rPHRFat4nmFDUmBJzyBqF9CGwCsuKSmPzAvC1SnoEAfgYSS92GzXYNUMqoehdWsp91U6cgVBAygvH9E982VQsLBdewybVcfUQNCKVgRfaCNM1FswCw6MbbLRGELrAk6ahVnVqCctn66apBnNJWQL7cfpsb57JvxAgwF9dzyAyUgMB3PKqKpYNPYGZ4Rz2Vrgu6LznSS1wdZsTgJuXuCKPS36Xw4LfmTYQppeCoAc6zv6QfFybdbyHcDEQbvrVYtR5Va8MCgwKiRQZ1Nyr2qiQRfkUemGhw4UDkzHJqaQ5a7QJY1xbKy5An9HzpsAtZqgD2eW5qoTPDoNmYNcjYFt7ZBBqNKecEi7SKrc7HsbV9As2PdaxqHZb55GuduryAfKUtsBMC6Wb7vt25m2BL6fCeF69YFcH9rGdGhQy6m1fGEFxxYxSV1sf9TkRcY5dSo9wjsjxaE94QJCp4D75uE7fn3uRx3rjaHXcrNLYYN7NoosK1W6T6LePD2o1GNm8LujzGWa2QwXjYUqgXSPTqM4xBoXwMPhPoSBPgvBg5wm1DiaZ1kyTDjVetiXzWe5SPt5FPxfqeGE7T3Pcqv6nnBczR7VfwvvGB2uQM2F9zfxm3nUYegJuuZvQXPEd7PjDPMk9fJBNL5v7D1P4dezzxcA9m3q6DrkmcW1Ar5UMXSU5g8Cqb1CdV5wgabZdDcGuJaE8PZFDtzj5ehWvVjbnTP9z4jKxNjpz2Lom91RXiVKsyZJkk8ypSLm95FEHnmeZAuaVxwNuziQML7Y1Rqx3fLL328G8xG1qtnE2UisBD913UBZxgne1erdSHUc98ciHaYVoxzghVaozi1ckJ"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-chain event commitment. ergo.addresses.Commitment in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Emission",
+      "kind": "contract",
+      "match": {
+        "address": "USNVj4qoyg7U7C6EpdFGHNzicn48yVmMtDrGYvJMSNjVZF4nforamWoWCMttwKetR58XFDuCvzGdUm2FhzuRvq1MMjBvCfNvAmfBruJ6fuvpCQPmWL7wMndaPvuqW2YFAkrkt6X19YjwLukdV9DToWjcHonvQEiLtJokFGrei9ksNLG3dm3jWFyEGa8AViY5CKcKz7ibH45ZwZ6LGPLfy2GQbTYRUyemWbfjGCy8gdxEspymwCgVtpci1yHbeGs5BHye9snAwyDN16vTNm719EfSQqgu4zKDR99tnbhT12b8FPvwZkRfSwwyL4ghau6i4jzcA9Ghi8tA6Bgi6gEPJEnPSSteF9d6kabuUnbZmmA81QYeZUEToFhCWncjBViwfcYYnFsxcJvxnB4DVtD2oQDZr5z5TRywDWKD6YjnxwLqwF2TFbrbDLdQzu6ayJzAcPYpLxCThQ2EAMwkz8YP4EXCE2rU2ZqjJXgRbpE1"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Rosen emission contract, not protocol emission. ergo.addresses.Emission in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Event Trigger",
+      "kind": "contract",
+      "match": {
+        "address": "ZsPNMsGz8D8y11MAneZTVjJndCjgTUi7z4a5wHUoBWnMsQSGvGwwrADVqqRBAYgDm4QmAD5Qtf2T2NL4qbbCv25HSE7PdMR5AsFH4t7Zq5yF23X8ne4WjFsfYwzhtMG1EHhbJCzSmLMV9R5L3jU8p4aNY6uBDn7efCBnPcWEDfZF1vPwYit1rV1SapMW6fMg4v5MyJUNprD7YLwuyUaPx4Gp8wnpkghuXGwZhGasCNQodF7LDMWbTBECrrtYNtDNiddhFioxZdPCg9K5zyHm25zqoA4Keen8JuVtKe6dVHjn5RuvqeDgpUBNLqPQEb19yn9byLrFUEw1oMBF7CwoRRvkiobo4A3WqHrjv14dwcSeRidGJotxxj9EZzvgGMytPeYTsrWYXdTkP9NdjmkcSYw3cQ9PRaVaNYdBxito4DDfVzUVJxVf7JFXqrt3JJGre1WsGtZ3FrLQwTmfVcA2nSpdHLeNiLHuUhnoqMQKQEfiP6iiofVqiuVajyFdeysKpq1SNE"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-chain event trigger. ergo.addresses.WatcherTriggerEvent in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Fraud",
+      "kind": "contract",
+      "match": {
+        "address": "2U1Bm1VfBKJQzNr6Zu6yAh2ZUwK2sV8uwmjyFfXZ1LBWEdTaG1FsQUHxbLK8J4Mwwf8nKYEQGE53Dw3qHqXbHjbZaufNjqgVAt3hGCPn7CBkWnq78ZgKUfnqjZPyfJeeFhr4sbaPubujhfXmpXHdMwPNUq3iCYk1YtSphPGRRUDfnQR88BdNTZzCtRc9ckJseYG32LkumBnewyPvoC88MPLrX69WnC7orkjQk8qoQn8VDnGHcTmj2Wh"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-chain fraud box. ergo.addresses.Fraud in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Guard Sign",
+      "kind": "contract",
+      "match": {
+        "address": "3FBpC6dt4xNpexUbLSZDR4YbuMWwLyKDUjbnHPCQf6VpUfqqLGzQ6P6uKkfoF1Eudh9YSU9uTEwYYJ3J8hDERT2mhM6wvCciz4HvZPLMUtdjeg5mCtJMyi6Wy2wTeQQ6UxyuwKCNGxU669QN1HNz7MF5JMg1xy84cEFVcTCcU2rKqiYpHNotatUq6uP6K3fAraF"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Guard NFT / sign box. ergo.addresses.guardSign in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Lock",
+      "kind": "contract",
+      "match": {
+        "address": "nB3L2PD3J4rMmyGk7nnNdESpPXxhPRQ4t1chF8LTXtceMQjKCEgL2pFjPY6cehGjyEFZyHEomBTFXZyqfonvxDozrTtK5JzatD8SdmcPeJNWPvdRb5UxEMXE4WQtpAFzt2veT8Z6bmoWN"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-side lock (bridge wallet). ergo.addresses.lock in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen RWT Repo",
+      "kind": "contract",
+      "match": {
+        "address": "NY4PEzZ7VfjxH2v4bXAdi6zEpHCTHia98VJ9niT31przEVppCK5aWeMJH71xSUHC6pN4psW6B2SDRydniQiEGZ7uAocVG4ERSoDxYyv4arAtDM9LdN9x6qzoFJn4YVtyPEUDCAzDefpVBTHvf5EWqJcikghaPc597yXuGcSemCTNrin3LXVhBBUPaf3QiE7NG5NYyDmPt8tgpAweKESv3YcsEQRxf3LEjPF38XFgg6nAmXFftGxDeSCPHQvLJosrv9LaWNK5yNsg3s2fvqE439KZpKJ1iUGrAd56TUkBVdUKykq1rJA27n87SrGrK1Y6aTdFRW3MUUHK82iK74qWeHwL126UQaoStf4UbKagskfs3mLBEekJ2tnw3hUQB1WamEKcTz36EYhFRjBuQaVUn4eRUmub3UXGb2edHZ33T6x8sSRuW1rLbxCwYvo9cyMTjueaD85f8yUMbzydzA1XkVa1YURS1SutBxfjY7Ejaw6jfbJYcQB15syRXtFR1pbAKHfMwQZ5WvcPZgjvTDFt6VKTcUh68CvtbxRcKKzY3sy9CdUgJUGyFUx2djkBkYJrSrNB6ngtN93GG39B3AY4wPV4QoTkv3JzP1KbbjxvivjLRrr6J1Tzs1y3ntFpkeScNrCzBL1bn2KMFigRNyTLLov3pkKGuh4b5HxitX9D1P2Kns5BLBu1EYB1WgHt8rmWGGEMHXQLgmEi5gtRuJptS2JX9QTKdVvcWyumpZKFkwPy5zdaUZuHozyG99KYLeQbtMpmURNwgedDfpTuiVaaTdEJkWYPGw3eyNXd8JubPWBHibXGwf3zJGzvimPkRPh8mPPgaV6zcmS9yJTTkVzGeJsepk5YC6FFDtz5okPA9KeChRqh168nycQYnNWtmvtNYXUdQYZ9XhzzN4f1yZtuSRiK4gmYcYYmMoR6UA1EDi1g7GKn1nW9gdcVsig3QMJsUzZ62XUf8MfjQ8xsMidHC4fWgeiP5wgMXdr6mYkyTSFtWk6fW6qiG9NFNeDHpuVdtfoZr5oJv5cLqB7MCJBxHiB4HAsBB39nvByqUGcagP5nZo2qoXzKeaYW8xAvs7AMNYfZ8WMHpjE1qDiadQ8jEwaYJXAwCj4z7p4dZfV1qYLpkr3BG15D7uVS5E73q7vfbd7hEthQ6U3Fi9XttkttU15nszWRNvt6Z4yyA8gY6FKN1YGN9EVzx78MD6dLv4VQCQTwh9sVg59KhJnG8xGkCv4WfrZsPB"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-chain RWT repo. ergo.addresses.RWTRepo in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Repo Config",
+      "kind": "contract",
+      "match": {
+        "address": "prufxZid3SJMyUVhAPFAF4uLyCZbEMWCMXRSyuMEvDUHZf81JcGcmu1EW1U9hUuJerWer5vmjhiJMmjbCqDwPMKRy169SPaLTxDp5tZ2rCrKjiv7xVAsnmphxSNBpj6qqB8fs1rWJGn9dN7t74qvx6oVHZny8KNMrqfEDjcWRv7wP21sZFP4rie4YhWJs8Z6swQ3DA28B5bzMZkMqfR7"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Shared repo config. ergo.addresses.RepoConfig in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Watcher Collateral",
+      "kind": "contract",
+      "match": {
+        "address": "SiDFfCzE1MKdUevq1vCRN1vA7ZWNQD3gPBXdGSJ3xxDbh6x1YHb9PRJgFM7kS9YUFNmP5giWuL9NLhsvhYLvvfwLQb8MZ3NM9yvLyYRixmVLnBS7QoiYSYj3ijuHVFnMtp538uGxXLfRF6bsaW68dbnjDuHMVtNccjHYgSTBiWNkWja8sDMSm635rvMeB61ARKpTQmR5Wf1T9NJnVutjazhX9nABq8L46d2jSYgtKVDiSv4cFZPZ4Y5S1fDDJYP2PLnKx3gRFqN89JWHhGWwh5SQgU73Dc2EbHQx3G39Ah6MSntJKc345LW6AnZjqqc2qg8xsNXtdxD6NcuWWnKnYrXABKPR6Tc7isRb4FoGxn7dWPaMDEhxCH2GsTNjM1CdYqdEEXauFkPiA2faRY6qDkVKdZ2G4wDdRcTUcyxK5KCciGi3UgCWpPxuXDp6b3YMBMqPan78xM2ttrDeS4ns1vq9rhPEyJG9Gj3m7epBMEXh6vdjLA5pCwnKMySyHNYviTv7nwCxG1A4bEzFNTxKqoJLHD1gUssBC2xrrkxj3ubgGz3YN6L5jVKmzce16XPVtqZfusiAC611kX34Hd4F9oCU"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Shared watcher collateral. ergo.addresses.WatcherCollateral in public-launch 7.0.0."
+    },
+    {
+      "name": "Rosen Watcher Permit",
+      "kind": "contract",
+      "match": {
+        "address": "2Eit2LFRqu2Mo33z3pYTJRHNCPZXtS2f68LNW668eK4nJNwXQZMTEW23dCLCxfBX9CZfhHCCt1AbFaprUWX4wG2LfPVrXjGSpZCB5oX3FQ23WXmNRtzqk34CHFBRzcqwHKfq6Nb6DNBzECArvDoeD65ViwRDvv2BuD7TLL499JwhxtWTmdAcEdC76bJVLzpCcpy8YBSXmXG8zm2b94BKaWRGzXuY8x2MQveE9cD7goUvU3iVqKxcM2boXfm9odgBQTjMnsVVPXzE2C6xvXsWUMoByh3pvwyCXJBSvKQeHAiJGuhB56FVum7Xxf3J5CBmXJWgU3GuJszvHXmDEGgXjEyWWyP6VCiQtokZrfWYzFUPtGQNzqMwmrAQC1A8yXxnJXuQG41BG2EFpgktZDyrRwXtPaCNDbrMSZ3JDH3K55UuiK5jPTszeHCGyj9efwVKtt3defLLW6r5npqW5QyoHZ7qAAjoy3mpLDe5tujTsKWJywtRsWwXRgxMWhCV31Gmv8bqZUhKb3Uy1PycskevybXTnb9K9FmLkHbDGt6EvZeHWDcar7hjs35hj1rzMHMeKnRvS5ScjSEwyh1kxhfXxqBG1gVWAzgyb2feU37YBg7s3tESnrTEUVtKpo3TNXR3STbtmbGgJK3Gks2ibcqGYpWQFsjPmUdwb828Sd9E2eGa4npGCgqtE79eacf9mD2bG39ZMK"
+      },
+      "source": "https://github.com/rosen-bridge/contract/releases/download/7.0.0/contracts-public-launch-7.0.0.json",
+      "note": "Ergo-chain watcher permit. ergo.addresses.WatcherPermit in public-launch 7.0.0."
+    }
+  ]
+}

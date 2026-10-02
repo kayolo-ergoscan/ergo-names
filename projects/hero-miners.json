@@ -1,0 +1,35 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "hero-miners",
+  "name": "Hero Miners",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Hero Miners miner reward 5CLS9V",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaSuf5QC1TJDgdxqJMQEQAM6YaTTRqmUDrmPoVky1b16WAK5zMrq3p2mYqpUNKCyi5CLS9V"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "Hero Miners miner reward Ej4pm6",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaTYNVozfX7N4dW1hToq6cRNZByKdjeYrnp6XFovWYndHqCVpDdYv8GYatWX15juuEj4pm6"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "Hero Miners payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9giun3ba4ZnPvxYdXpk89XvwWkmWqJNQpGxgTRz932PajDPjE2z"
+      },
+      "source": "chain",
+      "note": "Wallet"
+    }
+  ],
+  "url": "https://ergo.herominers.com"
+}

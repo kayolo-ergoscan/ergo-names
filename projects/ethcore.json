@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "ethcore",
+  "name": "Ethcore",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Ethcore miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaUegJYRx6RX8LmHteZqNgzsCNRfewf86UjiwsF7AQaJWF7ZxwYNVCSCHfEEgXH12APnqXe"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://ethcore.ru"
+}

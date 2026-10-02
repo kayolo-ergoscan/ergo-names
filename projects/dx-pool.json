@@ -1,0 +1,27 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "dx-pool",
+  "name": "DX Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "DX Pool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaUPpNAbKL7UeNUFEcjkoqW6ev5P1hkynBmG4L5baYdZ8rSPYCDNmvwBLiJR7ABjndPhqGm"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "DX Pool payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9fu1mLunnUUYEdJSXRUu1KZDJyJZV4gajd1uEFMEBsCWLEAJENo"
+      },
+      "source": "chain",
+      "note": "Wallet"
+    }
+  ],
+  "url": "https://www.dxpool.net"
+}

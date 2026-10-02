@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "seven-seas",
+  "name": "Seven Seas",
+  "url": "https://www.sevenseas.exchange",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Seven Seas main",
+      "kind": "wallet",
+      "match": {
+        "address": "9hYpa8qu3GihemMA1c4RVZuRGqcmBQKChgokFm6a81R3mFafqgi"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

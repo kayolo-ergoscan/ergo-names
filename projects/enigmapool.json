@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "enigmapool",
+  "name": "EnigmaPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "EnigmaPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaUjqmCExdQyaaUJrCXLVdGxfWDjCmMMpgeAvfC6omHdpGSC3PMvFYUUQkqhGx2ghDDgaky"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://enigmapool.com"
+}

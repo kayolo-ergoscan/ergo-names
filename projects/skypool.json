@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "skypool",
+  "name": "SkyPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "SkyPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQ52KFbMcFMnwVyF5UTU9itJeE9iSCmN5P6VAAU6Rg2UmsrpYSgTFwWSHnhWpfeFQNnu17"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://pool.skypool.org"
+}

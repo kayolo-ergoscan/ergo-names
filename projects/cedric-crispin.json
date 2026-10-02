@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "cedric-crispin",
+  "name": "Cedric CRISPIN",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Cedric CRISPIN miner reward VT3JsT",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaW9VYZb1Rf41YExoaT5SwqnGjoA6cdMRQfxMUyF8DTgQhwp6Kj1tpoGz6reViuNBVT3JsT"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "Cedric CRISPIN miner reward hsxh8R",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaSh9t3rXFXnkVg3ykWzP1bGJimA8B5abEiAtqQPgJSxhqDie9osp3ZHipM6r4bgQhsxh8R"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://ergo.cedric-crispin.com"
+}

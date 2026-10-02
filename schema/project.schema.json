@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kayolo-ergoscan/ergo-names/schema/project.schema.json",
+  "title": "Ergo names: one project",
+  "description": "Editor hints. CI runs scripts/validate.mjs, which also checks conflicts, ownership and the chain.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "category", "by", "contracts"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 40, "description": "Equals the file name without .json" },
+    "name": { "$ref": "#/$defs/name64" },
+    "url": { "type": "string", "pattern": "^https://" },
+    "repo": { "type": "string", "pattern": "^https://" },
+    "category": {
+      "enum": ["protocol", "foundation", "exchange", "mining-pool", "dex", "stablecoin", "lending", "bridge", "oracle", "nft", "dao", "launchpad", "privacy", "game", "wallet", "other"]
+    },
+    "by": { "enum": ["project", "ergoscan"], "description": "project: submitted by the team. ergoscan: our own research." },
+    "maintainers": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9-]{0,38}$" },
+      "description": "GitHub users who may change this file later"
+    },
+    "note": { "type": "string", "maxLength": 300 },
+    "contracts": { "type": "array", "minItems": 1, "maxItems": 500, "items": { "$ref": "#/$defs/entry" } }
+  },
+  "$defs": {
+    "name64": { "type": "string", "minLength": 2, "maxLength": 64, "pattern": "^[A-Za-z0-9][A-Za-z0-9 .,'&()+/:#_-]*$" },
+    "hex32": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "kind", "match", "source"],
+      "properties": {
+        "name": { "type": "string", "minLength": 2, "maxLength": 80, "pattern": "^[A-Za-z0-9][A-Za-z0-9 .,'&()+/:#_-]*$" },
+        "kind": { "enum": ["contract", "wallet"] },
+        "match": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "maxProperties": 1,
+          "properties": {
+            "address": { "type": "string", "pattern": "^[1-9A-HJ-NP-Za-km-z]{40,}$", "description": "Exact Base58 address" },
+            "template": { "$ref": "#/$defs/hex32", "description": "SHA-256 of the ErgoTree template (the explorer's ergoTreeTemplateHash): names every contract built from it" },
+            "token": { "$ref": "#/$defs/hex32", "description": "Id of an NFT the contract holds: the address follows the token across versions" }
+          }
+        },
+        "source": { "type": "string", "description": "https link to public evidence. ErgoScan research may say chain or protocol." },
+        "note": { "type": "string", "maxLength": 300 },
+        "until": { "type": "integer", "minimum": 1, "description": "Last block height this entry applies to" }
+      }
+    }
+  }
+}

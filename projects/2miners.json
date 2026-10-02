@@ -1,0 +1,27 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "2miners",
+  "name": "2miners",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "2miners miner reward AFYfSc",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRiLRSYpvTCXWoN3A86gnWs3Z8BWkJGkGMXsR3WzUUyqbB47YAzhhsB6HJdJ4tC5AFYfSc"
+      },
+      "source": "chain",
+      "note": "Solo"
+    },
+    {
+      "name": "2miners miner reward H22DBY",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRQTX5KNdnaWTTX7fEZVEQRn6qP4MJotPuRnS3QpoJxYpSaXoU1y7SHp8ZXMp92TH22DBY"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://2miners.com"
+}

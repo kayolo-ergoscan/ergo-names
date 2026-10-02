@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "nano-pool",
+  "name": "Nano Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Nano Pool miner reward WPp2c6",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRxf1rbqBRZ6Zbw9iigdB4PCdjyFKLrk22gnmjKcxZBe53vqJVetRa4tTNF9oowQWPp2c6"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "Nano Pool miner reward Xe6NnN",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRp6WD5jWZSnXzBbA44g1xSMk6Xv2r6Cey8snSH78S6ZbWjP24yyPTDCCZByLpNXXe6NnN"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://ergo.nanopool.org"
+}

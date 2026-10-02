@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "leafpool",
+  "name": "LeafPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "LeafPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaSyhRGkZ4PhK1X12RKRfeM6eoFWgxUZzeqvcSP4VWakHBMWmvaEDJAyjWVw89c2rE9QCR5"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://www.leafpool.com"
+}

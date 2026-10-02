@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "666-pool",
+  "name": "666 Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "666 Pool miner reward QcoK5p",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaSsLA9CXxAG75h7e3m8jgPsRdgEz91LWJJAqm7zNiptP3iLVSGhD129x2LhH6VUXQcoK5p"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "666 Pool miner reward zmbj8n",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaU9uJYAV8HTNzQL5pZrf7DovupdeBVm6msBjzLQjor8cp8DXaruQvyrAij6YxZAzzmbj8n"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://www.666pool.com"
+}

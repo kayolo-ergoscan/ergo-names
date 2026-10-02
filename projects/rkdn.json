@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "rkdn",
+  "name": "RKDN",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "RKDN miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaS6tKdqbwNn9QxEg3uJvcceMRmMJEZwwWwa8rAtPBRaavnjxjkWNwwN6ZixFNrgTex8yBe"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://rkdn.app"
+}

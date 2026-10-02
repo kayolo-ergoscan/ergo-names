@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "nonkyc",
+  "name": "NonKYC",
+  "url": "https://nonkyc.io",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "NonKYC main",
+      "kind": "wallet",
+      "match": {
+        "address": "9hmS5u1Khhc4PFERTA2dGzSkDuwUrrENQEUAveF6gHj8xCi9qy3"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

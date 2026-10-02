@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "tucanpool",
+  "name": "TucanPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "TucanPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQXGLfzCxWW4Gv8tVc9TQc5EUJSCcX75wZTdRwRenax5nA6N6cCgexuU1wwk1bda2efRMD"
+      },
+      "source": "chain"
+    }
+  ]
+}

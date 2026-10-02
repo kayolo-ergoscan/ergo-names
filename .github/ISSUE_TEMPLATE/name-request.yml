@@ -1,0 +1,51 @@
+name: Suggest a name
+description: Suggest a name for an Ergo address, contract template or protocol token
+title: "Name: "
+labels: ["name request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No code needed. A maintainer turns this into a project file after checking the evidence.
+        Teams that use GitHub can open a pull request instead (see CONTRIBUTING.md).
+  - type: input
+    id: address
+    attributes:
+      label: Address, template hash or token id
+      description: Base58 address, or the 64-hex ergoTreeTemplateHash, or the 64-hex id of an NFT the contract holds
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Proposed name
+      placeholder: Duckpools ERG lending pool
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project and website
+      placeholder: Duckpools, https://duckpools.io
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Evidence link
+      description: Public code, release or docs where this address or contract appears
+    validations:
+      required: true
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Who are you
+      options:
+        - Part of the project team
+        - User or researcher
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

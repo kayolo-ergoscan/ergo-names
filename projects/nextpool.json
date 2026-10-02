@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "nextpool",
+  "name": "NextPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "NextPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaVwELAfZGW1nTQcpjLc5LJj8fjFoQkgf6NKSysabeSjfBeHRPJsiFX9yiixXjAGaf4CtYA"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://nextpoolmining.com"
+}

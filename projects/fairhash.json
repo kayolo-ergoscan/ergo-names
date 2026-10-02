@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "fairhash",
+  "name": "FairHash",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "FairHash miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQDQHbmfki3xsnR1MoDhszCCmV8rAeHK7azjcLX9hyA3CEK9PEeMXCN3kt7zpvYPGcwzat"
+      },
+      "source": "chain"
+    }
+  ]
+}

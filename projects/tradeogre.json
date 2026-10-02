@@ -1,0 +1,27 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "tradeogre",
+  "name": "TradeOgre",
+  "url": "https://www.tradeogre.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "TradeOgre main 2dswwM",
+      "kind": "wallet",
+      "match": {
+        "address": "9gFodGGQUTnxm6o6StrRnXafNFHEajxzYSJKEQMegyZz72dswwM"
+      },
+      "source": "chain",
+      "note": "Inferred · Second TradeOgre P2PK; not in EW mains"
+    },
+    {
+      "name": "TradeOgre main Df2gif",
+      "kind": "wallet",
+      "match": {
+        "address": "9fs99SejQxDjnjwrZ13YMZZ3fwMEVXFewpWWj63nMhZ6zDf2gif"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

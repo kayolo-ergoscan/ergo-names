@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "cyberpool",
+  "name": "CyberPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "CyberPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaVCeT3bW977UHZ8HpMD8baobDctiudfBPCzgn9CaENmaSCvEP95xtpnMr8QLkp5axb7DsU"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://cyberpool.io"
+}

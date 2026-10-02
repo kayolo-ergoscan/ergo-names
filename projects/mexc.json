@@ -1,0 +1,19 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "mexc",
+  "name": "MEXC",
+  "url": "https://www.mexc.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "MEXC main",
+      "kind": "wallet",
+      "match": {
+        "address": "9heCed7HKoDwUXAnKU6P4mZZq1emzX7s4wLgaKziaEtxnVQEod2"
+      },
+      "source": "chain",
+      "note": "Inferred · Not tracked by ergo.watch"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "huobi",
+  "name": "Huobi",
+  "url": "https://www.htx.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Huobi main",
+      "kind": "wallet",
+      "match": {
+        "address": "9feMGM1qwNG8NnNuk3pz4yeCGm59s2RbjFnS7DxwUxCbzUrNnJw"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

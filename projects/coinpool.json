@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "coinpool",
+  "name": "CoinPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "CoinPool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaV9VDQwgKWbpef6SALF1iRmAoGWd57TLVGPa7Nmm8wYSRMMhDFonSwUixABLvtSYThQq1d"
+      },
+      "source": "chain"
+    }
+  ]
+}

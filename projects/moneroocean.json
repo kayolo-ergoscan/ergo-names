@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "moneroocean",
+  "name": "MoneroOcean",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "MoneroOcean miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRnQKXANeF6qGx67Ly4VaZd8ECQHNrhMfWRyokmgcoo5XvY2Z59MqL4yJxgcZhnPL25JsM"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://moneroocean.stream"
+}

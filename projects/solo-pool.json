@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "solo-pool",
+  "name": "SOLO Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "SOLO Pool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRVtdXFwQFLD9NrGKjCP49pYiVAbptRRx9r4GbTmVZZYNDJGQ54AG4YjPpP5YkvvDUxBSd"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://erg.solopool.org"
+}

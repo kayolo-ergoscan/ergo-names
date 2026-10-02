@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "getblok",
+  "name": "Getblok",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Getblok miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQ9HG2rDCmirsSGWEva3yZTXfjAB4ZBb3D1o3XH66qpndNUYqXzXiYnUUb2h9qZrzdZ6UA"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://getblok.io"
+}

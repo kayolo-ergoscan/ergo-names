@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "baikalmine",
+  "name": "BaikalMine",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "BaikalMine miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaVQijCWEVqc7r12NWrGbrb28PFZmsrbJvDcWTBKXxPKApEKPSEi8wvvJAo5LF48LMB3iVY"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://baikalmine.com"
+}

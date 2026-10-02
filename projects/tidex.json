@@ -1,0 +1,19 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "tidex",
+  "name": "Tidex",
+  "url": "https://tidex.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Tidex main",
+      "kind": "wallet",
+      "match": {
+        "address": "9fnmngbD5dHoKjAPYhX9FZcUVM8yxnNNM4JuYW3AHzcTZRyPUgo"
+      },
+      "source": "chain",
+      "note": "Dead venue · Inferred · Venue closed. Name on the card only; not in the Exchange kind count."
+    }
+  ]
+}

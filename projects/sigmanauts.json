@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "sigmanauts",
+  "name": "Sigmanauts",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Sigmanauts miner reward 3QTeUo",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQDYikoEkCMEPRxDiYnVRfiqhf3uLcMhbTPrTrrc7wkyF5LFMmgJyT4mPa6ucnmk3QTeUo"
+      },
+      "source": "chain",
+      "note": "Mining Pool"
+    },
+    {
+      "name": "Sigmanauts miner reward 61iuTf",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaTjRpj66mK94XwLG7fuPVWSSg8oUcsopXzkFpLC8xVybkZ9dyC2LaxcV3Bjk26kS61iuTf"
+      },
+      "source": "chain",
+      "note": "Mining Pool"
+    },
+    {
+      "name": "Sigmanauts miner reward iXtQYP",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQQRxJaryYegLaDAfBKL29nSjdJwPZVvnEEU1wNBfEiPH2DwkpUSRYRn9yexBtutiXtQYP"
+      },
+      "source": "chain",
+      "note": "Mining Pool"
+    },
+    {
+      "name": "Sigmanauts miner reward nhVBpo",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaTM9SDHLQJ9LLWBfhPJiy6LKXY8UePvDGzB9gxHQ5bCD6j4ALrgk3AAfQjaaaRSXnhVBpo"
+      },
+      "source": "chain",
+      "note": "Mining Pool"
+    }
+  ],
+  "url": "https://sigmanauts.com"
+}

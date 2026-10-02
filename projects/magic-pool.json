@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "magic-pool",
+  "name": "Magic Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Magic Pool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaTmFJfU5i58VVg6PRWfaAEWJ2qTgvVusnA2U1xw9NTsDYBpW4fTzkz2Cx7sGkQQYwnJ3xN"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://magicpool.co"
+}

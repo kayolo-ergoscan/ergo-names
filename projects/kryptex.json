@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "kryptex",
+  "name": "Kryptex",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Kryptex miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaTnTZomXPfuJ67oYJPbrv17yNkLjN6Nj8HxZEUf2iAdiv9gTqmnKKa2i75zmUtDnPQovBb"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://pool.kryptex.com/erg"
+}

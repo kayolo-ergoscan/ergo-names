@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "flypool",
+  "name": "FlyPool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "FlyPool miner reward 5Az6n9",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaRvR2VKsnXYTGUPh3A9VK8ojeRcpHihcrBu23dnwbB12BbVcJuTcdGfRuSzA8bW25Az6n9"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "FlyPool miner reward uCQoNs",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaSzQf8GiC73N6Y4FgB7e7hEPauEZnNjasg2wKHb87dJuemhoXTjo2XnZ327GCGJZuCQoNs"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://ergo.flypool.org"
+}

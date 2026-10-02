@@ -1,0 +1,115 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "coinex",
+  "name": "Coinex",
+  "url": "https://www.coinex.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Coinex main 6z1wBU",
+      "kind": "wallet",
+      "match": {
+        "address": "9fowPvQ2GXdmhD2bN54EL9dRnio3kBQGyrD3fkbHwuTXD6z1wBU"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main GE9Jgg",
+      "kind": "wallet",
+      "match": {
+        "address": "9fTyfkM1NWdBJvpM3rAq2SNdJ9yfvUqjM3MBStNS2Aq5fGE9Jgg"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main M6XNXv",
+      "kind": "wallet",
+      "match": {
+        "address": "9h4WD9zRk7efQYM9jUYy3hrReJmYMYGen4yVeEw1SWGTuM6XNXv"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main MRgd8i",
+      "kind": "wallet",
+      "match": {
+        "address": "9gD9khJaxi3SvcX9VVPQ3vnV3xUTonVQe3Fvg5X7cGGbXMRgd8i"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main RvVvib",
+      "kind": "wallet",
+      "match": {
+        "address": "9gPwnhhzc2tEkZHpcUeQ9J9wQWKzoLjCRbNx4qAsm2dK2RvVvib"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main UtEaxM",
+      "kind": "wallet",
+      "match": {
+        "address": "9iL1tEz6ENBLtaiMaEppnsrj9HjvnRaLdRyqiBPeCW6SyUtEaxM"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main hRaKAH",
+      "kind": "wallet",
+      "match": {
+        "address": "9i51m3reWk99iw8WF6PgxbUT6ZFKhzJ1PmD11vEuGu125hRaKAH"
+      },
+      "source": "https://ergo.watch",
+      "note": "Appeared after Coinex->Gate move during a security incident"
+    },
+    {
+      "name": "Coinex main hUoG33",
+      "kind": "wallet",
+      "match": {
+        "address": "9fNqgokdacnYykMZmtqjTnCbBJG9mhkifghV6Pmn6taBihUoG33"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main n8n7pE",
+      "kind": "wallet",
+      "match": {
+        "address": "9f65ghY8F5k7uKMACX7o2GfaV4EzWpsNW3gBTc23pAqTon8n7pE"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main qtruWk",
+      "kind": "wallet",
+      "match": {
+        "address": "9gLxihuwAPkkgTpctawTRz82XVm46z6o8q3vMXVeZtyq6qtruWk"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main tiQQdC",
+      "kind": "wallet",
+      "match": {
+        "address": "9haE48wKvgYzc3WdBXRU9ERw2ZWWkGzJT8jGHcXvzQggftiQQdC"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main yAiGFv",
+      "kind": "wallet",
+      "match": {
+        "address": "9f3iGnXcebxzv4avYCUTt6dekgPMV1t5hpHdcJ4mAfX94yAiGFv"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Coinex main zrntUe",
+      "kind": "wallet",
+      "match": {
+        "address": "9fPiW45mZwoTxSwTLLXaZcdekqi72emebENmScyTGsjryzrntUe"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

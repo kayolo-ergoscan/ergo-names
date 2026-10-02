@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "jj-pool",
+  "name": "JJ Pool",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "JJ Pool miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaS7z8MA868ZjU6ujmWi8Wqcx7VK36jcogWt8cRCKoGJYE6ezDe5g7f6fG7arqXNhuNP8Je"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://jjpool.fr"
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "gate-io",
+  "name": "Gate.io",
+  "url": "https://www.gate.io",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Gate.io main D4VykC",
+      "kind": "wallet",
+      "match": {
+        "address": "9iKFBBrryPhBYVGDKHuZQW7SuLfuTdUJtTPzecbQ5pQQzD4VykC"
+      },
+      "source": "https://ergo.watch"
+    },
+    {
+      "name": "Gate.io main QoQDcq",
+      "kind": "wallet",
+      "match": {
+        "address": "9gQYrh6yubA4z55u4TtsacKnaEteBEdnY4W2r5BLcFZXcQoQDcq"
+      },
+      "source": "https://ergo.watch",
+      "note": "Inferred · Sends only to 9iKFBB; EW unconfirmed"
+    },
+    {
+      "name": "Gate.io main v5taQE",
+      "kind": "wallet",
+      "match": {
+        "address": "9enQZco9hPuqaHvR7EpPRWvYbkDYoWu3NK7pQk8VFwgVnv5taQE"
+      },
+      "source": "https://ergo.watch",
+      "note": "Inferred · Sends only to 9iKFBB; EW unconfirmed"
+    }
+  ]
+}

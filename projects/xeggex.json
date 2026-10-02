@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "xeggex",
+  "name": "Xeggex",
+  "url": "https://xeggex.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "Xeggex main",
+      "kind": "wallet",
+      "match": {
+        "address": "9hphYTmicjazd45pz2ovoHVPz5LTq9EvXoEK9JMGsfWuMtX6eDu"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}

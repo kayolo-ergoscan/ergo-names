@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "prohashing",
+  "name": "PROHASHING",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "PROHASHING miner reward",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQ8Pmvtz1RTPQchF9b3FBtus9KDTNFr1VeAGvagvSGtS7BvX7joRG8oQVD7fkkDgsSiegZ"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://prohashing.com"
+}

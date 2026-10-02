@@ -1,0 +1,163 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "oracle-pools",
+  "name": "Oracle pools",
+  "repo": "https://github.com/ergoplatform/oracle-core",
+  "category": "oracle",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "MORACLE Datapoints",
+      "kind": "contract",
+      "match": {
+        "address": "2vTHJzWVd7ryXrP3fH9KfEFHAsxkTBPp9YVhNRdkiaNFFU6gjsFqP9Roeprps7hzNBAwGA6WFWzoqBWx58ARZP5sb4Y2Cc5rTgARSeq43vFMAUvSB1cS3v55Rs9vEq9FpBJK2KUWNY6ZAA3xzMamDFF9jfU4bjm35g7GGCZMhzC2ve3SuCBqAhgb6vhT4eHaqjL92hiHW9MRFghv49AycbNwtobRid3sd7UQt6Lg1VHoziseayd9ao3H2Lc8hyRNffLcMy8RhEosZzufutEWRwLwsgDkuEbzE5pW"
+      },
+      "source": "chain",
+      "note": "Operator boxes with the MORACLE oracle token e5abaf1f… and MORT rewards."
+    },
+    {
+      "name": "MORACLE Pool",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6PmcLAsSXs28sVwRvGDWo54AFUenax4vGf7yNX58TXrAUQUcKAL3HuKz8Rhvzm3ZUGkuZAdtFcjehTV7To1EF8QKX2hCLm5ZUkDuB2zynJvTmzD7AqaH25ooDph189uGp4nRPtvs843"
+      },
+      "source": "chain",
+      "note": "Pool box with MPOOL NFT f7f008ad… and the MORT reward stock."
+    },
+    {
+      "name": "USD v1 Oracle Datapoints",
+      "kind": "contract",
+      "match": {
+        "address": "AucEQEJ3Y5Uhmu4o8dsrHy28nRTgX5sVtXvjpMTqdMQzBR3uRVcvCFbv7SeGuPhQ16AXBP7XWdMShDdhRy4cayZgxHSkdAVuTiZRvj6WCfmhXJ4LY2E46CytRAnkiYubCdEroUUX2niMLhjNmDUn4KmXWSrKngrfGwHSaD8RJUMEp5AGADaChRU6kAnh9nstkDN3"
+      },
+      "source": "chain",
+      "note": "USD v1 operator boxes with ERGUSD-PT 8c27dd9d…. Each post spends the operator's previous datapoint box."
+    },
+    {
+      "name": "USD v1 Oracle Epoch Prep",
+      "kind": "contract",
+      "match": {
+        "address": "EfS5abyDe4vKFrJ48K5HnwTqa1ksn238bWFPe84bzVvCGvK1h2B7sgWLETtQuWwzVdBaoRZ1Hcz1i9w5sa4bkSPJMrkFSmcpLeKUEseNYQn3x57xGttnWFjXkLsyE7EDQuga6ic28tMpPrVokJ2d8ZHQhjddRgwxMfhcwvVtoTqjLbDc3YKJLAetd2DcaCWJB6XzHCM8ezDFpCWVVrFeu4SYGSoGJbgPDRvEAcJEN4qu1RwsmZ1MzBfWF2jBJLagWqu2GvevuDG5oTtJrkqwCHRaAshfoM2mQnjLBsajjPN426t3aRZVJVRHm8apmZstnh92kYBVMujvLA1BkR2tqTfYLtmX6ChFSMXSYejkkCQoLdog59iD66oEzAZtg9ZowqDCjfT8G8YLVpEkVd23QH2LhFtEie3R4etCuvzCSyC4UmMmLbvrnUg4LfuP6xv6jckLGH8HkNWeTuuqf2UmVCQfhMMndBciTXF2KfrPCrzmDXw"
+      },
+      "source": "chain",
+      "note": "USD v1 pool between epochs. ERGUSD-NFT 011d3364… rests here until the next epoch starts."
+    },
+    {
+      "name": "USD v1 Oracle Epoch Prep (until Oct 2024)",
+      "kind": "contract",
+      "match": {
+        "address": "EfS5abyDe4vKFrJ48K5HnwTqa1ksn238bWFPe84bzVvCGvK1h2B7sgWLETtQuWwzVdBaoRZ1HcyzddrxLcsoM5YEy4UnqcLqMU1MDca1kLw9xbazAM6Awo9y6UVWTkQcS97mYkhkmx2Tewg3JntMgzfLWz5mACiEJEv7potayvk6awmLWS36sJMfXWgnEfNiqTyXNiPzt466cgot3GLcEsYXxKzLXyJ9EfvXpjzC2abTMzVSf1e17BHre4zZvDoAeTqr4igV3ubv2PtJjntvF2ibrDLmwwAyANEhw1yt8C8fCidkf3MAoPE6T53hX3Eb2mp3Xofmtrn4qVgmhNonnV8ekWZWvBTxYiNP8Vu5nc6RMDBv7P1c5rRc3tnDMRh2dUcDD7USyoB9YcvioMfAZGMNfLjWqgYu9Ygw2FokGBPThyWrKQ5nkLJvief1eQJg4wZXKdXWAR7VxwNftdZjPCHcmwn6ByRHZo9kb4Emv3rjfZE"
+      },
+      "source": "chain",
+      "note": "Earlier epoch preparation contract of the USD v1 pool. Held ERGUSD-NFT 011d3364…, last used 2024-10-04."
+    },
+    {
+      "name": "USD v1 Oracle Live Epoch",
+      "kind": "contract",
+      "match": {
+        "address": "NTkuk55NdwCXkF1e2nCABxq7bHjtinX3wH13zYPZ6qYT71dCoZBe1gZkh9FAr7GeHo2EpFoibzpNQmoi89atUjKRrhZEYrTapdtXrWU4kq319oY7BEWmtmRU9cMohX69XMuxJjJP5hRM8WQLfFnffbjshhEP3ck9CKVEkFRw1JDYkqVke2JVqoMED5yxLVkScbBUiJJLWq9BSbE1JJmmreNVskmWNxWE6V7ksKPxFMoqh1SVePh3UWAaBgGQRZ7TWf4dTBF5KMVHmRXzmQqEu2Fz2yeSLy23sM3pfqa78VuvoFHnTFXYFFxn3DNttxwq3EU3Zv25SmgrWjLKiZjFcEcqGgH6DJ9FZ1DfucVtTXwyDJutY3ksUBaEStRxoUQyRu4EhDobixL3PUWRcxaRJ8JKA9b64ALErGepRHkAoVmS8DaE6VbroskyMuhkTo7LbrzhTyJbqKurEzoEfhYxus7bMpLTePgKcktgRRyB7MjVxjSpxWzZedvzbjzZaHLZLkWZESk1WtdM25My33wtVLNXiTvficEUbjA23sNd24pv1YQ72nY1aqUHa2"
+      },
+      "source": "chain",
+      "note": "USD v1 (SigmaUSD) pool while an epoch is live. Holds ERGUSD-NFT 011d3364…. The collect tx pays the posting operators in ERG."
+    },
+    {
+      "name": "USD v2 Oracle Datapoints",
+      "kind": "contract",
+      "match": {
+        "address": "2vTHJzWVd7ryXrP3fH9KfEFH2W62Njq1GBzqyvJUvZZAdMsYNN5dbwF9sC3raNEdCUK4xw4Ygjkz41mYRiAWsyFHLeAESUuDxTpbuyG77Y9riUxJN9tMZ6nLCLTpgP5T2XoaYEgGaBkbaf1n5fqUjFUvpoeFr9cLoHRevEEQAiQ6QKEaqsPaWrUq6TbujgvqEw6gB35xug7WKjANyZePMyyrbE1ySthXjLCj6KUGdruDaw63LQdk6XxVNjVdppMW9jHJt6xCGJn93gqtLGUeoErHeX3t3K93KC4Z"
+      },
+      "source": "chain",
+      "note": "Operator boxes: one seat each with oracle token 74fa4aee… and DORT rewards. Posts land here, the refresh collects them."
+    },
+    {
+      "name": "USD v2 Oracle Pool",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6Pm6nD3FJQ3fZXESZTq8imJ47LJLMWtrhqm2nP5cVwMfXoHoqhnfvxUUKenebtEbLwZFTWPFRXJNsqLYDNWMtYAbvmqWgxCCPeH1fECQYtdZksCMwJrcmpLtNgfeADVEnmcUCPeTee8"
+      },
+      "source": "chain",
+      "note": "EIP-23 pool box. Holds USD Pool NFT 6a2b821b… and the DORT reward stock. Every refresh rewrites it with the new rate."
+    },
+    {
+      "name": "USD v2 Oracle Refresh",
+      "kind": "contract",
+      "match": {
+        "address": "oq3jULmmMxxmwrZ8cxcPUgHKvuyppYFNhhBZrQw3G6ws7CkstXE1EWWe8ykrfspHvqufzzvSkiDsu9SrkuydTwDoApLtr8F36fazW1uX85kBuDMqXJNjG88Gn1aDqKqVstY4b2qzNWqo6cvzWqk8jo5HUhvcDNktpzXzzeFcAmX2YUGnGT615byL1spZ4u2dstoGTRcPuuaXxbneNGPtMz7teZaZUsKS89i2LPeFwURwBiDKQHaFvq1HvbXfYcXc48NKTx6KQGb5zjbh84edfLnACxRZF16p1cSvwLpRVVSQySwBfzhgsu6Hn7B82Wn1sKLht7zZXMcsXuMxQEe8BkQ9L3xuQD9t5xGi6dSEuWNgD5hS4C6Md2RUwr2e88EY1avtxrYWiyAzJVj7jjx3jZonDNtHe8nVFh4soMYbNNd4GVMRnALSKtZVPDpERLXKduEUFEtPHpGG5sc16BQVAwH1u2y5YikBbh3NUUAsABxB8qVjzMW7V4bYDVuhdeCYpAPvQhHRXFQuCkqKCPoicQFucS7ez4zQsDwr6Me6snkP1DFd1fFkg8GvvuuqeUtufVyZ3jdKhf1b2ehKg5oQTguWyHeubPjs52b55hbBHhNJwoc582JPcTASXHkUviUg1Hgpq7E7oCaGFWEGq2vvCJRH6wjNVTTDxSdCvYznzecXjZcbYLWWvF7sZJbUjmatejxXidb6o9m58t8JR1EcYbqRzpeGapHip9uWjmNcmnRzynhXSAzMLg9cP"
+      },
+      "source": "chain",
+      "note": "Refresh box. Holds USD Pool refresh NFT 19b7f2e2…. Spent with the pool box in every refresh."
+    },
+    {
+      "name": "USD v2 Oracle Update",
+      "kind": "contract",
+      "match": {
+        "address": "2dixsQeWPVtED6JEL3hmsJFhdNbtcEYckwb9bbQwgh3r2pnwd1sne1KFRztfG2nvA4z8jyF2ASHM3YdXG4SBPbLXsZm9ER49Xy2od5mAsHLeci4UDPgqqWRwchARhdRicZcGsStvjbZxcWVPW7yFKK3ndfp19LHLDaqwX2bCLreBk9uszXm5fHNGzQr3SR84mc9CL9d3zq2Nh2cr7cyGWVFx2MGztbNbLKS8MqXieVPjGE1LyJtWPqpJJi6WsczpFY118fYhE7XMbo87drDQMtm8WrxEbKUut2fRDox6RnvLTDjTcBLgv2rp7tmFiBLpcbzmiJJAau1ioHpcpSVFAUsn5cwrpCbXScPAkukMsqVCtG4CwMAcWQJnDGYPLheoeKvSJuKAV7ej4tjntoYiJYTar13KPGew7ypGW9C121omdHfj76WxkjqAKCLdEEWrYQQPLjXxjscqXxnCe3xDtWbHNSKd3v9CUin2cBhuPLWWgvEQ6TGfTna6Y3V6fwSVSzY2cmrrTxuMd6H7UMybp99uRhcmShvxF3kH3HBE6BWWi1rYGehdnk1Dns59"
+      },
+      "source": "chain",
+      "note": "Update box. Holds USD Pool update NFT 30e27369…. Spent only when the operators vote a new pool contract."
+    },
+    {
+      "name": "XAU/ERG Oracle Datapoints",
+      "kind": "contract",
+      "match": {
+        "address": "2vTHJzWVd7ryXrP3fH9KfEFGynndKKKNFrURzDPPhJeC8cH8GJRSo2EBd1h1M2MKcJyG1DQtQdD8s8nyTv8iBf7bK2nzfgubQeNTthVKVdAm6EvZbY4okpQovADbcgwf83Tsi8uNEHoY7UPE1tzqbobXSAdD7Sw2ATSDJpCHXf3NqqRDFShQeswBaG34Sbf8vL9XTR9ndKsRynUCXzQU93FaAYMe1hFgxoe3Q8w2xBPuYXvmv8suHSCTFo6TJ9JWWKhxUnpPCiKkbfCbrUPpyYzNepdVcTgsbyQ3"
+      },
+      "source": "chain",
+      "note": "Operator boxes with the gold oracle token (v3 78263e56…, older v2 a007e07a… and v1 6183680b… seats too) and GORT rewards."
+    },
+    {
+      "name": "XAU/ERG Oracle Pool",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6PqzhnRzKkXN48Rr2SNWspChGAVUHFtGjhNK7dzGm3VeJdkgvzySx5uSWsyekihaxdVpuvhz4MqNZjU8FkwYZUzUC8AL3pFNifisCSrLywNWehhxGz8EJpyuCdtofhUFVw6qNEsvCP2"
+      },
+      "source": "chain",
+      "note": "EIP-23 pool box since 2023-12-22. Holds GoldPool NFT 3c45f29a… and the GORT reward stock."
+    },
+    {
+      "name": "XAU/ERG Oracle Pool (Dec 2023)",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6PkqWEyyvWWZcarUw3NNptqEThhWKbhYLpHAL3eBjPTR8G9NjpHmyiRQZvahkvg4b3oca5V8B4aHmHckrgbUftHE6Jt1LyPATTwwQYbCNrLtHDPNQedw53miVf6MCU2jArAYqZYgX55"
+      },
+      "source": "chain",
+      "note": "Earlier pool contract. Held GoldPool NFT 3c45f29a… from height 1160125 to 1161627."
+    },
+    {
+      "name": "XAU/ERG Oracle Pool (Nov-Dec 2023)",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6PkLJoBTYFtvvdQ4r1g3RWoSywdGnhUjAJ1PZkEdmjCjTUPCE3xZkm5fT5kLQH28V1jdWQ6LP3T5rJVEs79deM2RYXfvPDx8bzV7XCJbvhtYdLb6LWQxkEwvoQfjP38nAt38CWqmCjJ"
+      },
+      "source": "chain",
+      "note": "Earlier pool contract. Held GoldPool NFT 3c45f29a… from height 1136444 to 1160120."
+    },
+    {
+      "name": "XAU/ERG Oracle Pool (Sep-Nov 2023)",
+      "kind": "contract",
+      "match": {
+        "address": "PViBL5acX6PkLJoBTYFtvvdQ4r1g3RWoSywdGnhUjAJ1PZkEdmjCjTUPCFL6sNBmovRNV8E8PMDFjFuN7V6T4RGbGkRZpfR17aUAXQWfwncceVAa9PMobY3snjHy5xUH8z8cxbBHt2QLhUkrJzJx"
+      },
+      "source": "chain",
+      "note": "Earlier pool contract. Held GoldPool NFT 3c45f29a… from height 1098945 to 1136425."
+    },
+    {
+      "name": "XAU/ERG Oracle Refresh",
+      "kind": "contract",
+      "match": {
+        "address": "oq3jWGvabYxVYtwQccW381u3uTDLg2Zbc3PSzLyPRqwFP37Shs61PchaqD7tEYrzcJzF498uLGKemB7jexeM3H6nYuNxd3sRLfuzspQFSc1jMimeZjnH7wbRXfTN6PWXjXbMTkW6R3EWHs4CwTEEbHwuDKoMME8DgX9SmJuLHL1QNKxEJEkFH5XRkbyWSUJqAroMG7jnyxucd3BbCfZQZrDjjs3iWprNdJw5ddj6D3v2AHRJmNsWvHEy2tu8mgD65isoPS8Xto7HSoBR6782n1qCQH4RPYhBeQZsq5LPqP6z5hAonp6C9CDe53fTWoDfAza5Rp2KGfwkWNuxf84KbVa78Nm3LS1GWzEaL6M7VA1ZBcTBXjfQrsp52qf9FM15dUL1Yv2NjcjmPhMy8RwPicafx91A2Rt4BWjBf1ehsXU6fPWEh7wF6ubqKPT1QaB7RhN3o8HwpvX1KGVrmE8ha3aCs9GRMVKejDU28YFTKcDv8bBykcdmQ9SYXQ1bVLhYJBA9UczBM9hUrYR9HT1DFgSpd14nb2YiHvWDtRP1rC5498YoB3dHikfSjpnPvFTXGHyJ6coZTCz33xdp5Qc4rZ4YFLJka8vANeMAfrHaQ6uCufyMZU6K2iRxg5kJcrtQQtXiEhkh5YwaeoYaHYxfTjwzkKhPU9q7jLr8gzWpZ43HRZUfYpsKQBHLBSPS67FCydsjJEcXJtYoBGGzXeP2CdP72xGb4LmS66a1SeSTyYHKS2tiENLDCyFbM"
+      },
+      "source": "chain",
+      "note": "Refresh box. Holds GoldPool refresh NFT 97ad1592…. Spent with the pool box in every refresh."
+    },
+    {
+      "name": "XAU/ERG Oracle Update",
+      "kind": "contract",
+      "match": {
+        "address": "2dixsQeWPVtED6JEL3hmsJFXTKCBngyQDvxSrXJKU5uXhEkodMGo813a2hRPuhWps1rKpBzMxTRm2NfvvHTvcdeVSmooAKWH1tuDRrSV1vKkDhnA4HxhXKi2g8KskT5Hx9ufdVpmr5QHJFaRK2PUL6L9tgriJ9L1tQFzZbXqbXf7zp3LiBfnoBtDvSbwc193JcoLNbRex7ncCAT7UzEYWg7fpZNqiZfWmx8EeWW1d6cHZtW3xRQu5cKtV245RkbusUPqeR93pT4XaRxXeFxoiMEJCqvDtc3SDEf2M4Ub9cgEmxvDCRaYWeiTaK8Xb56codRqmptto13nQSBBSYndtFC6GxZKZxLkFxwPdQmt57BtnWtemLY1ozbP5mHSpDTqALZShfY7WLqRXoW1aS1k9m1KwH4dN4EW5LziwRogn7mASLxKuYzvcFbfUsrBi9SzK6gR3Z7b8H2tXnt9SgS4MhsrdmPJdYJpfPS31MRR5ZH6hNsM4GBFsSUR9EVVJGj88trBPACvVMsM93xRZqapahGJ6rZX5myqmJCCbynX6H3pXeDSoQUFytoNKVRi"
+      },
+      "source": "chain",
+      "note": "Update box. Holds GoldPool update NFT a5552e38…. Moved the pool to its current contract on 2023-12-22."
+    }
+  ]
+}

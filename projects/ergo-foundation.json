@@ -1,0 +1,28 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "ergo-foundation",
+  "name": "Ergo Foundation",
+  "url": "https://ergoplatform.org",
+  "category": "foundation",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "EF Hot Wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9g1ReLmsbGevkTjfPGMdRMoFRdrAVskZVmSBpaEdVW2DfG4HDWm"
+      },
+      "source": "https://github.com/ergoplatform/ergodocs/blob/main/docs/ef/ef-treasury.md",
+      "note": "Treasurer hot wallet. P2PK - stays on the holder tile."
+    },
+    {
+      "name": "EF Multi-sig",
+      "kind": "contract",
+      "match": {
+        "address": "2BggBDgr9n9geTKjCJBCEWMReb2i7wcocw7fjVd3QyM7qFMtmVHyoFr78kChAxGekJxUTZru2aMjyZKcVoPfHX5d12RqNrnEAgzGqUCoJ2v9xCqmT75V5xdhT1JBqQbeRKJZT4XGMg7hZAqVvbMsQF26nkWRPqiCqPoKfy7GZw9zuvr15qaqbB2ZcZXaGTrvqDN2o15SRTJwvVADDx2inzrk3U25cdjFWYBc6ECKSjmYpPWL8fn4msxsBZKNiGbP8vDrYWqQuPtMwJ5Ag"
+      },
+      "source": "https://github.com/ergoplatform/ergodocs/blob/main/docs/ef/ef-treasury.md",
+      "note": "Ergo Foundation treasury multi-sig for ERG + tokens. Not a consensus box."
+    }
+  ]
+}

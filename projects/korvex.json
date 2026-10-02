@@ -1,0 +1,26 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "korvex",
+  "name": "KORVEX",
+  "category": "mining-pool",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "KORVEX miner reward 81R3ww",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaQrVU2UYvE8tgbp8SPqmxs3g5A7b5ErdYrAmtLjGeGQ1hsAdkjk919kq4YsaGCYD81R3ww"
+      },
+      "source": "chain"
+    },
+    {
+      "name": "KORVEX miner reward 9mpoyt",
+      "kind": "contract",
+      "match": {
+        "address": "88dhgzEuTXaU68MtTHDSrSLWikZpFiG9vEUeVFUCjwkaT3WXLKYG2UBP7rpwBAiFhs2p45NcQv9mpoyt"
+      },
+      "source": "chain"
+    }
+  ],
+  "url": "https://korvexpool.com/coin/ergo"
+}

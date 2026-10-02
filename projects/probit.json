@@ -1,0 +1,18 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "probit",
+  "name": "ProBit",
+  "url": "https://www.probit.com",
+  "category": "exchange",
+  "by": "ergoscan",
+  "contracts": [
+    {
+      "name": "ProBit main",
+      "kind": "wallet",
+      "match": {
+        "address": "9eg2Rz3tGogzLaVZhG1ycPj1dJtN4Jn8ySa2mnVLJyVJryb13QB"
+      },
+      "source": "https://ergo.watch"
+    }
+  ]
+}
