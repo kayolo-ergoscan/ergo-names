@@ -1,0 +1,111 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "ergonames",
+  "name": "ErgoNames",
+  "url": "https://www.ergonames.io",
+  "repo": "https://github.com/ergonames/ergonames-contracts",
+  "category": "protocol",
+  "by": "ergoscan",
+  "note": "Naming protocol. A purchase is commit, then reveal proxy, then the operator reveal and mint.",
+  "contracts": [
+    {
+      "name": "ErgoNames Commit",
+      "kind": "contract",
+      "match": {
+        "address": "2eR9oE6KNihih7gH3L6uZ39ej38mQukuEKN8vHLf5wE67Hg7wBSSAwf3P1yTVkB4uoNmLqEwwfF1PiW1xcNSSwhyY5jmQndtcC9gePWFC6LgwpMzi1iWP2VLTLZwnfuFUxxKx5TJgA8XFMdEmV6nGntVhKKKSrvGQteJRkJPU47m9EcZthzHMfja5rRjTErkXqh3pmWBwZNxBEAnHrNTBPuHt3eUhsKX9VFaqzEnTKPGdth5ftNFuEPToYpP4HPTyLQ24bZvinWVXBp8JBLtq8H64nXiKkb4DKKXRfCiksyjQhKgBLWjNdCjBRBgcZSkABvHThVP1HmSMrX9vZpCdu2AfGymLRSbQnZ9peAQsCBUHyd2jzrgp4XSUGcqLNkcd8GfM"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/90b40b4e87dee44669800aa44ebae14250799856/contracts/v1/ergonames_v1_commit.es",
+      "note": "Buyer commit. R4 is the commitment hash, R5 the buyer key, R6 the miner fee. No tokens. Live script, in use since height 1805125."
+    },
+    {
+      "name": "ErgoNames Commit (second script)",
+      "kind": "contract",
+      "match": {
+        "address": "2eR9oE6KNihih7gH3L6me72AyBM9uBKQ912RCUnSPSzJu2bYhP1Jz1cXjGwt8hLb2hdWe8nEWQTHkbgaw8nprsNCwMEGkvw2tUUaQDpmeU1F6eUZaAXMQPAsBfZGq2HtCBEyMK1Birg4orqEALxnCZxrwXyVHG1kvjNk8jmSqTZXE2ZNTTygvdhaiPCivDiYqZHskwSj98dLqBhwcqkuBtMwch73oBU1GzMUd4MSBWF9Gk4f4VrYKaydZEp2AsKzvtZQoq7m669GnZTuckYCJxAAzWQpWzguFMFi3sPR6mxnk9TMAtNmYWJJDC4Nfg3m3E9xAS1SeizdBx3ffuUnu6WJscYEgYh1aKuLYynJ4BqZy17qvBygfgzEPfkP5bWq9cVQ8"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/90b40b4e87dee44669800aa44ebae14250799856/contracts/v1/ergonames_v1_commit.es",
+      "note": "Same commit contract, earlier constants. One box, created at height 1805092, still unspent."
+    },
+    {
+      "name": "ErgoNames Commit (first script)",
+      "kind": "contract",
+      "match": {
+        "address": "2eR9oE6KNihih7gH3L5pHDVYZQ3L3MSfQWBhP4A9kabdGMfgq4346ysoDfxz1zTcPFeMto4ZMPKtbFBGEVohJwhuwamdKghWZNiGsfT8E38wfe7D5nbVxYDDJwJ4fHhzzKwe8NJw6PqfgSo876uMaCY2Mq8i1TB52YG1r1oiYD9zBnU6RUCdu47rc1Cb6uYTWHSuQcDUk2sEC6uzgFRtg2n4k73wb4DSchcpJi1KvXSRJgUXMmrD8bnAqPYyRf1wWnriEzpnDRN4ujPjiG9QkRuMjzv67JWWM1ubWVEssniJDtW8k9RYQ6myxADq6RWveo8mWuxaXNpbYjmUgcAgsTs2zrBFj3YYZQJNFk5xtCmnCdSZNuPprr7EJYc8EyW6NReb6"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/90b40b4e87dee44669800aa44ebae14250799856/contracts/v1/ergonames_v1_commit.es",
+      "note": "First commit script. Four boxes, last at height 1805037."
+    },
+    {
+      "name": "ErgoNames Reveal Proxy",
+      "kind": "contract",
+      "match": {
+        "address": "YpQiTGJDYCJRNJCv15sLy7LtDugqPcRgPEG1oxEYxpRDQQSze2yYg91umNE9kfcsogUMy2S6HtF8VGnydFoshJjiowV1QUdHKnXVHFFwDhC1qLzuhzroEW2xsboAPGQN2nH79geX6hDHNkDvJa4AzkoQNwgCKcfc6JMkRfRngMc7A2Hmi2gCRLP1SjBMgjMR3iBYr9HeQ6j9hQ3V5gA3jgsR3LhcNHgEt7QS3Uj2sf8bF8Bh6nFqEW7bDmU9gJ8GQneTjBpMSWak6rqxiX94NDGdpbqqJNdmcPSKkVqLbED9cnbKR1FgpAMivsPcnZW5YT94F7nf1omYUfXijKuZgbD5D3ExLXB6EjWvLKn4bJS74dQCXenuHBUa3JsVAvpkShTzbeddW6FEnpDF727Jx3WfvAYSTHtmntMmgGnWfG82SBtDuWd133wD9f1kNAnuv83ZwAEjEMMQaCi1LmrC2FDgfkeWGwkgdisZTiuyKb45NwzW4t6QrzyFGsYWYbjvJcJ8hesvxACgnJJa5nzW3trATMA6afRzentY7u6AeGqSUiBj7puqqA8tp4p8w4"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/3fed6c108e5db07236ccf425b881d0de8010bee7/contracts/v1/ergonames_v1_reveal_proxy.es",
+      "note": "Buyer payment for the reveal. R4 hashes the reveal box, R5 miner fee, R6 operator fee, R7 buyer key. Live script."
+    },
+    {
+      "name": "ErgoNames Reveal Proxy (first script)",
+      "kind": "contract",
+      "match": {
+        "address": "YpQiTGJDYCJRNJCv15sLy7LtDugqPcRgPEG1oxEYxpRDQQSze2yYg91umNE9kfd3f4e6JF43Faom7VXdAduwUtUGK9nDrGv6B7t5s5457Sh4MXedZsRad3guausw5PJtKuaS9Gga6SUtx9TTKoM9TXMGN68t4fkkjTkpe5UYcpcEZvEG4J4KxB71ToUq8TSKMCidvwcrPwNN4FCE7skgVZJQNdU4iGVw5rs7BQU14qJoRaLNb3j9QCoMEayxMWjs7iQrj4aeaYLzAhf3KmYoGRhgKZ2xWJgawx3aM9h52J6uc5FGEtZ7LUnghqgDkrfrQu3AW2sjKwEm3RoEDSNWYauhMSPto8gkpogQSwz84QSmP74cqm1sis3i55NcpV1FtLTkK9tpAPD8FBrGuvB3HCzXmnYcdMVcpv6NQmtSFeCMpxKu64TQtYjpLUWsc3rWhgKpZwjVag9tdZHom1XPWTDfukFWp9wMsVNJ4gzyQLXb4a21PS6QAJv4zqbm3NFVC9uXWVnK74XoARxHcTkMj697bGmhawW7D6MacXWpCtKT2RCd881rwjajXJHGhp"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/3fed6c108e5db07236ccf425b881d0de8010bee7/contracts/v1/ergonames_v1_reveal_proxy.es",
+      "note": "First reveal-proxy script. Five boxes, last at height 1805038."
+    },
+    {
+      "name": "ErgoNames Collection",
+      "kind": "contract",
+      "match": {
+        "address": "9aEtVt7EevaT5914tJ5NRdnKWseBZRVsKkAPQzzrZyeigCSr5evnGgh2U6cu5K2YoCM5mrJAbLhZ1jnRVheeiSnywnJCKnchzaJcW4Z4L9R4W4FPzR2iv7vPsxpHYMdcsu3qqgNFXqr1Eg2bCvzPMveZezsqAKeZKx3kpoDBbKoFnof92bS1iJj6hTtyHiFxakFWi9hEGDPFMNaWmpQuUGEf2EDj722ztadnUcqdn6ykLeDcdsMjWQxxJtENGM1Vj5PWx4fb6ZyGe9dUoyNEouQcmm3PFLR6dRFRXxRYRoa38UrDWhPEWwFW6P6xv3B2W4RUB24xPZySHN1dx2boCiZ9ELi8X434tLEt1WC9ckS5zD75n9eDbU6tGL7GN2NpJSrzveTvLhW8r4t8nuoQyum4nW1NGYEiSjVCSxHkPF837XQTPUtjXkbTJyFhyomwbHqiSpixJ9oUnwhHBt9BpqYJRuGWXw7JYKdm5uqxbtrK855uetV7tfTCRv9HxZpateCdVze68YtWuG7hRw96bM3YLngmAqHUxqZ2NJNUB7xDUaFmeuxTjshTMZP7d1kiHRgogb4rGx6mwQXhdC6eGMGzAw2Ze4Bp9186vVoodR7hiu89k8qyBmsGgK4WZUMrEStzHTgH91FgkpMNTbgy8T7ibYWty9sTvUEt2SiwUorxu3ay9fLvmbBZ4fA8nuuJPoNrzC9ZCN2gsaH3sCfjsVQxjgPUEPdHbT62SDXekGe7gzJgPdGyMyFPwrK8hFDmq5MAcQeFUMQhAWsEuK"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/94f2a9137c1ae8f65200dd3115f4f3e0bb5e3411/contracts/v1/ergonames_v1_collection.es",
+      "note": "Holds collection singleton 10c0eb21\u2026 and the ErgoNames token supply. One token is lent out per mint."
+    },
+    {
+      "name": "ErgoNames Reveal",
+      "kind": "contract",
+      "match": {
+        "address": "2Ra5T9CuT79A3xuhcEwNSbT6Cx1pzmznxgdNP3Sy5bQfkSjFcWp3UEnkGog8dmeTKC455p6dr9ZsVqTKond9ex6PDqE3D2NsLayTg8TJAUyxkrpnANpZN7925GyWjQGjm1hwMAQ17UzWL8aTVp77KE8uzaBQKzVPbytkE29FjSZFziZDCPo2kZ4BiCXcygpeHLUkxfvWc1B8iCWYofx53DYjjc4khZN3cDwKmaogyAHT6H6avifxFzWDEKYNH3i1d8H68Uqy4QWcFpk3sbisku55ifsbyk3DsWGRUfEchKWVL93aNj17R5UE1yYeWoSpBg3CtDk9gw4XXXZkhSawBEdw7PCZXj8nJGwmGBEaf2J4C4cCDEscKJdaNsTgpvWeFuq2Q8TNADV91Gows3gRaZCDKpcUTSDFQ3EoMeiXytM1ZxcRTSWxemkLQosrSoqToQaziT3FNypjS3sJaonMt1LdKmRzwNF1JfeNHXsRrvPXNAAuJQ4zSUZCpHHEEL2g5fXshaqzHp2zzX4Wp3Qa1igpdrHvuCdTxcLuhzfGLb18qoTNbwPqg62w2NxQL6JWwMNFmyXn9Z4gqEMazmGfzLMQ113Un4ZXnPRHrab1GY9Ddtu7nLWzr6dRfNTvUcQUBrnm5SVgP552ykqgEA3dS7p1EF4qMemizuE69FVMs6xXAJnPFXm4jofov1CUMhhBK8ae6jWauDGaabvKPGKbixmTn4XFji7kyqMRb7vyvhCsZoGDkHBoWD4CvRb3LncUArYnfWHTGRRoyqXBZiPwbwKhEQCkxidjhfKv5haY13iRipEhtuG1Y63eBr1fTzd4EjTK5GuiumaDqtWnakoJwtKtGESkiMXYChcxiaYXLRCiSpcoBkygZQJnffzdBqyCih8cRHCsqnLFDBeDFz6EUTuGgQfbrd6Nihyt44ZNDnq8n3fvg69amYZuGpm8smcgZhd5TNguSg9JHnKhebw"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/dbf777ced91d6837c007b571b81ba7e74c58a880/contracts/v1/ergonames_v1_reveal.es",
+      "note": "Reveal box: the name, the buyer secret and one collection token. Spent together with the registry to mint."
+    },
+    {
+      "name": "ErgoNames Reveal (first script)",
+      "kind": "contract",
+      "match": {
+        "address": "2Ra5T9CuT79A3xuhcEwNSbT6Cx1pzmznxgdNP3Sy5bQfkSjFcWp3UEnkGog8dmeTKC455p6dr9ZsVqTKond9ex6PDqE3D2NsLayTg8TJAUyxkrpoDT8oeDs8HGjbJnw7yaUPNFtaDcJFGrvbBdpgAzxMoQvkPJ9tPLtJHyhRYsWjeG6bBXNoiqd2ZE9hzUh2pEt1NiW2S2Jdro5744GFHEZ8cDavkGoszsWcNiZ8gd49gTJM1jnXWBk1k1MmzEZ8taPepPfh5oUNRGEtTAXeViWM3Z1NnAiGw7Wm8to7aBsJaxRKPpTYWacqGLeF3upTt3QhLT64utzJxWC2gtxVwUeeukxfP4wyRmf5FLjYDPvg2BBbgF2pzPxUutigKt2Qpdc4Y2e4QsxzZAkNjVPrSESxQzSg6Y6C9Y55PdRL8bZtPMuSpeRAy4Hh7KckTFbDuCkkFfo6X1Arm89T1mwx4dmkN9Mwd4fNmGNDQcezkGn7VRGfZQorGzeJjckdUNV4tKZKVgbCqEGdgzxnv1FgKAmV7fdfJNkooC1kqbVi9DFWqvqt9xnBCnZk7HRGXQQhPdyRfmyVD9dAsdHMfsAisihaZQVw8tmtRreYjJywW8y38WmMKWYrikivDcokkPyrG8JDJsRW3B18wRSzjWqK4uaAdnMgXfmCPeNhM7Vv6C1s8Xa4QaiVgC8UY6w7nYRGHZFE1KCC5aEoG5X23wQkBJ3Q6LJNv36YENXoA6Ke5vYvo1ftet8GtmAeVaqFZRcmAgUXgFAuVsSuatn5qJxPdHp4j1PktvGQxVSmRnWPVHbFU3TFwHqKejjfFiKYP9vFffbrxrGefXxeDpSg9fx6yXoiqNhhHj3vaqh1Xvnrzb4hsrAvbkwcyvSHuu4bJRFAxLA2dKUnaLSZEWHvdKw14tx31GqzSjdXVmxqHAawzE2JeWFcPUe7XCNxWTeRkxUucfAd6kYttbQQnXRWbub"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/dbf777ced91d6837c007b571b81ba7e74c58a880/contracts/v1/ergonames_v1_reveal.es",
+      "note": "First reveal script. Four boxes, last at height 1805038."
+    },
+    {
+      "name": "ErgoNames Registry",
+      "kind": "contract",
+      "match": {
+        "address": "5ouhRXbGCL23NEhnwEiZLTDuVhJnj7LwQToejCQpU8jRJ7yvQHZVC5eBCMNPabppjpovSKCvMAHDR7MTKzPZBoQZ6WRwiwtdVLrr5p5Cc9V7Td89ykvT6U3KCtBn2xPD4fuRuR7w3pmQyyhsDZUwneBRQj1TCMkMPnwQJTTVPCMoqikzwNidk8pYX3ncKVUnt8hinerPJmm3naVxTos4K3HSJzdJ1KWCScaFFuzbULhmoLkNEVnc6Dpc8g1uNbTTojLJ1DkG5tMsDsojoJ3JRUhNaJMBZDdRMp26Qr6MRkQ7FtNSFaJvKVQugWHnpgbxNxnvEZ4P4grDLfyhLYw7uhoF9v4DWvdfn1YvWWtrsdhV1F2AtkYcnMUxwvm9yyd1oVsgXLjFVMzfbhw8f6hPRyoYWkihEcgo34v1JYGhfHXxQUBwCpW5ic4dGs98V7FtmPvUKrtjcBuaB5kziRapiu1jGKfvEbk5Bd1poZV4tmrggpHgeq9Qb6f6DUQqwCvwZqHZyVcmHTQjxySLB8EX4hUt5TPxX3jBTkDqbPciqVCgApHy77XapGH6WrJgSxu2MAeWdmtvDXySiGkA214JwmgRYobmCkMKfrK2xRkne9y4So878sWZvp7S5H5RifTdKnk2TcJkg3MUwdFvxc43SxBcRqWpoJtrtBnaQERjewYY45ZWtWj2Lob7jH8Vi77tNAjbhgQHq7YLN4mcGGMEZWQZcJ6V2bDw8nKjUr1NMqsN1F15TkA6aqqyMhGUsra5183ydyxevdS5qzRtswA3jd8fN7koP1DKjMTRTcgXZPEaycsfL5uETbwjQALEDtCgAKvHfvWi4wPzGwTFUYanBc6fQ36yZ2G7HPqQrWC1HRg33U77Fkp9ckRBfa5Bq1xAEtscXdyTAZcPTrSo4RKSe5dZFcriJ78Dp3jrNw7swabYJHt7zmNVaYgFuZYL24JHEvAqC7ecGjd7rEy5aiiQjGxKcfNGPAFAgvqkiJifsowde4t5xkyjLJ3fihp7KSVSkFQWEBiV8eWPebgC95Ti6qQhsQq4STLYsiveseaQoaHne8PUxrxZye75JywxNjhDr2weLxwjb5n8Yqs564LFhGsywiUVrFyXBqAXYweez7iq73XoUAKfCYDNWXteXXiBkTpngdajqthf3AShnF5kwKhFXV8atJycd5L6NhsxV2fnHq9tAYjUv9P9utE9YsMw6b63cmmTBgm6FxmhNhiEvvMRHHLUwkQAxE5ciUvsteaaxhnMTSzo5vp6w6Sr2czfBwg5x3CfNGSKXLnSK3zgjjLcSJw8Qa2EMixxfSuamvetEFEskxgsGZXVBTnGHnmyhU1ajmzn2DTjwyEBXAD2phCjPp2bHKio8z87tHS7cdYjJwU7GE7mkdF2e1D3fRP174W9bTZCAMAqYRLgsfMr7Qn9WEikD5vyZtqmd2jJ2Qs2FpqtqMdtUWrQMSNoE6uNRQPxat7Gg4Td2RZbJsBLDPUzjTwzBzbgXGFkJZoyDDWJ52LPzEKCDoh35maGHLCL3xJgELnC5Kj2vHJwwF4rBCkxZDPw7CwTP3G6BiT18nv6sGS4HEyADsafYNhbhVQ8VUUaTpSbXAR"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/fdac92c923a297f27b15fac8aa4c7ae33c416d6a/contracts/v1/ergonames_v1_registry.es",
+      "note": "Singleton registry. Holds ErgoNames Registry Singleton ce712171\u2026 and the AVL digest of registered names."
+    },
+    {
+      "name": "ErgoNames Subname Registry",
+      "kind": "contract",
+      "match": {
+        "address": "7jHVhaV8wosVRK9m3BAw9TTtynQuJF4pbhbc8bZBhi2r5XkkqsExjpuHjJ8wSxwHftnEFjD16DKvMEMWzgopVYc1KeH8TEQ4ycSKD68kijGX44E1DofdhsnBNkfoNvW4XoeRYJVVgL87e2c7JbCXhjiGqqSz7TKeo3DFRD4UoTbjaXeZGaGHJwHYqNnAcELJrLAwfzCFZACTwtmyTjKNR1DvanDHE5JMaziQ2hcd8nvrozntwE2kkfiW6593MTRrPkCNcPC2pJ1xGc7CHcT9gwGrEZswmQq1chTe4uoAjnz6qpy34NQzk3qFMcC7gThHyzba6WgrXs9BW6KSqG599zH3eb3GPKSLMpzRbeB62UdENHX36DwVjrTWgXjJRYVT2VYDPNdi7sw3ii7tVphMzXsb3FLHUujVphJBH9D1B4h5A8pFcUiB1b36x1bB65dTSAoQ9UsYGjjy6aN8vHayBjZcqY6MN1TNfywDpmcf486LBEdnCQw71Bz2JyKTJJ8AZP2Pavt7xmjV23Ga3o4AX9dccjrnQmWnuxwsbrLSFTfay3UcDiEe9yurmFdP5D76Vz5UaGTLFn9Mr9NSueDwD2zUJvFcLgR4KLeMwC8rvueBJoQjCt31Ve9npMzPdTwmrs1UvMpx3WN4Lmd4ivoZLsRerLTuRg9zcpBxmus8orrhxFE7qUPVeVv1dJwk7r4BEMh5fzj73yXUApTpGCi3JEgxJ7kns3cNcWg92netxkfEVMM6Thr3JMDdRdzPSXCpQh9eaXhpCe4eM53hesTVG8mQHVw6nkneFLDEidpzsohPkH7G4uk4UbKd1Bce8UBt5ykKBzmutLXfNAGFC8b2c5W9EeB8do41NQNC5U1tD25AJi2QKBFqZi3kP1kZ9UxgT3W3BoVm3EnqP6zUp25TUeSAEctwZMW5HriJzp2iJxqz89dQpUMjwHaZ6XDrDa3fyiviMdQE91M6iVTSrJ7qMwyHfQYjTHkNSdh8TtyezKZq1YofRC2hvRksurP65yd73XTAzVpYT21sgMQqug6eYja8RMc7itJN7a8EbdES2kxm5TC5RwqrqQpMmK7oFMD53pAKZzKUf1ukAqXzU4Gzg1RLsQteFnoZ71c7tq5PN4c362QJbPkQFSBthkAPcpNK6rUhqn72ewwYLo9Zj2odi6ULguFLFeYGYLvDxiD4hWUEwUET8TVVR1qMCAt6i9oKEcAUs2CSdQYsKWnFyJ4v8bHPpXgJphZGKcF1EAX8hErB6Eqikron7HjjPq5RfSfkftuczPuQgxiFa7re2W9jzEknFzzaGoWCCTUkmTL5DNB5hfnXF8eUYHHHLjjTu1fHjM4GT1TAyQG2r3KyDouVmz8owBZeoiquSZkFeMiZziSbngum2NiuxKTauxvdStBWHDkNQTATECkgcExD7K54yRyfvZ82FWqQM1PiqRsrGP9UUBv4Rvh9StuWsV8bE6HwppQpdq9GLNNa3DCcQA6NK3TVjjUULPXb9SAdpxsEWGnEU7mJGBax4efpvqoiwnyRA6AoAvAE"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/1d956f1e2220a66ba3911c21cac0aa4fe8c9742b/contracts/v1/ergonames_v1_subname_registry.es",
+      "note": "One box per minted name, same script. Anchors that name's subname tree. Carries the name NFT id."
+    },
+    {
+      "name": "ErgoNames Fee Split",
+      "kind": "contract",
+      "match": {
+        "address": "3fpsftw9Tuo1gdycvFjwBXfA1X9QbtMZwRX2UfkCU99gRTez7rkpc45aK6jqg65R88H38jVFiGTyNqJKYHNufDyRZL1dDUWq8S5BepStaBbzGcDUWF4AGWhMMNxCzyejyW943Q2467nF2kFd84aBFCu4rLTwswvQ3AmHW5LMqR6ktT1jtF5HjWBN3gTR9kuWKE73EMiXGjaPitxV5b1b183KFX47dKJYqi8HZaH8eSXYM8FsTyBG2U439dSNnmpjMsk8RnMkSBdPwG8NnLC1GCdA4N5aeeX9VhAHejydqJPdezpSr7kJoEoBfyF8V6q6qfCN5WviwrTdWpp81Neps8RhAjhi7zCDjwLABBhiCiDb1yyJwWk89jqsZFvnAiNAbRy7LZkwHsGBCqxoh2msuAsP"
+      },
+      "source": "https://github.com/ergonames/ergonames-contracts/blob/35983d88a6247aa66c4b47c1a1a97d191ea1245d/contracts/v1/ergonames_v1_fee_split.es",
+      "note": "Receives the mint payment and splits it. No tokens."
+    }
+  ]
+}
