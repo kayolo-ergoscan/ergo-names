@@ -1,0 +1,21 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "lithos",
+  "name": "Lithos",
+  "url": "https://lithos.work",
+  "repo": "https://github.com/Lithos-Protocol/Lithos-Client",
+  "category": "dex",
+  "by": "ergoscan",
+  "note": "LithosDex ERG/LIT pool. The pool NFT names the live box.",
+  "contracts": [
+    {
+      "name": "Lithos ERG/LIT pool",
+      "kind": "contract",
+      "match": {
+        "token": "c0b21ac51481a5d242809d9b1e189a8baf3803fe347ca01833c1aeb380e6eb29"
+      },
+      "source": "chain",
+      "note": "Pool NFT LD-POOL, emission 1. The box also holds LIT. Tree head 1bbe10650400040204020404."
+    }
+  ]
+}
