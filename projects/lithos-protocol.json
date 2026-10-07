@@ -4,7 +4,7 @@
   "name": "Lithos protocol",
   "url": "https://lithos.work",
   "repo": "https://github.com/Lithos-Protocol/Lithos-Client",
-  "category": "protocol",
+  "category": "other",
   "by": "ergoscan",
   "note": "Mainnet boxes of the mining protocol. Scripts that only ride in a context variable are not addresses.",
   "contracts": [
