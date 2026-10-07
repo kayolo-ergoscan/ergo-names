@@ -1,0 +1,84 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "lithos-protocol",
+  "name": "Lithos protocol",
+  "url": "https://lithos.work",
+  "repo": "https://github.com/Lithos-Protocol/Lithos-Client",
+  "category": "protocol",
+  "by": "ergoscan",
+  "note": "Mainnet boxes of the mining protocol. Scripts that only ride in a context variable are not addresses.",
+  "contracts": [
+    {
+      "name": "Lithos emission",
+      "kind": "contract",
+      "match": {
+        "token": "1ddb641b785e9ac9baf455f64932295e48cbbf4aadc9645f74065d58d09cdc47"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/LFSMHelpers.scala",
+      "note": "EMISSION_NFT_MAINNET, emission 1. LIT_Emissions. The box also holds the collateral bank and the queue token supply."
+    },
+    {
+      "name": "Lithos emission config",
+      "kind": "contract",
+      "match": {
+        "token": "34a44f069c15ff92038803c6c21194f2c9a194f3a610c40ee1ef2773bdfc5c35"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/CollateralContract.scala",
+      "note": "EMCONFIG_NFT_MAINNET, emission 1. Emission_Config_Mainnet. Any 3 of 5 vote tokens can spend it. Those wallets are not named."
+    },
+    {
+      "name": "Lithos emission gate",
+      "kind": "contract",
+      "match": {
+        "address": "4bvZT5H4tkhhnLxPzyp7MooTfqmvigpHTeiV4XHBHzxXRdNHtTcsCu3n1BJpDRKYWQjADPCsWZnRXnqHn5RwjbK"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/CollateralContract.scala",
+      "note": "Emission_Gate. Queue boxes and the proof-of-spend box that holds one collateral token between a find and its return."
+    },
+    {
+      "name": "Lithos collateral",
+      "kind": "contract",
+      "match": {
+        "address": "foqgf3Ys6E6JCr9CA4KQM3H9uPcpDT7YB9cENzuEE2bsX8Uce9xmpnfLqvLFPmrW4QYwNZg6Dk8cnwvCbFXMsucJYVCrMdS2ZGrFcT8hXdGWUzF2mLQQXcQBpLaLuJCUDT7L9HuxtMEkUC1MDnBzhsEeCQqNyRFPVAzQiDsFr2KUb2XPVN8PyUzyrptSxK8uu9TtZg3fmk5DuvHJEt3gGVrHfCYtRZGW1oiRY1W5FWC5vkRJUq4KSSKjmnorq8LttoKKgmbeo7yCBJg4ckumzmrQV3XZqGr9tJeZaa4QfVGUoAKVVhtfFenRh5Z3aSGh57eRFrWRJJ23T1TzvzCBPAeHEibfBgLRqU4iosXJJhHWPy2kQq6D2bryAqKEDsrdRLdPZ4C8SKD665cMxGrCS3gEhw2jbYL4iBkD422Et1WghudtMK79t99Kq2rrBX1GtuTopfsGUwABrJaFcHdNxY7uSCGEboL46QtbqvJs3qMpARJYDXPQSHYtMchBWHCoWD16p1CpfWfzb7g4Wx8C3XyUs7PkcFEbSPUes5nhaTLMziwoYwy626A811TZWvdjX6jtPch7Gofnr3BYT2zpLv2jK73QC95sCadezHoLi5rNY5CDKuputjdVojjjgrz3iRY7NuFGfPjN8twXSFc8jDejB9tteDavvqTg5g8aAkeEcnvgM8SrwFJULjYcrwP4pg7cgwidzpzQd9YZyjmu3K5sgbiEwxR3ZdP7J6x8GeTyhDSLQEkvru6DCXWF4dLBfDcCvV87BE1aoyCnN2U4nz1DGnQGNKi7xHnDPKgmRSwK3WwArFZvH8gdr3CX5kUEhpovMewhjf5cxbufHJB8VHZqWVcriY8CgwLwhhcB7EcTVnzEKaRGefG76irESvCt2aZrkd5wDBtPeFvZUiMv7kvFKaMANMvo7eXn23V6Z634pam5W1rJ7CG26cxKNL6VkfzWdmZvKc3nsH8qJfqbSow2U1aVi4kMCQMoTke5nEW6WDapVgXbZG1pFfPoi35K4bMYZnxnDH6tB2dJK76UAezmy4P3QtdwQgp4sxeTQNU4pg89REsHNYw7phqC7i1rfHK1ZVsfGHjb2qkxuU9fWudkF1rcRN5CWYKtfLrCMzmVLaENXDbzs1ShGMCyWMxnGAbqRxA8VAWAQk3YxoKAb6FnxTSMijmMApcLky6hoXTiKf8z3XYfcj2qT24yhwepmkDYFFKw79Zry9xPajFUdaWDM64RUaX4EHfusjMusBEo1bvuDoVNEBcR1RCdL2G2"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/CollateralContract.scala",
+      "note": "Collateral_Mainnet. The address that holds amount 1 of LITHOS-COLLAT. Spending one is a Lithos-mined block."
+    },
+    {
+      "name": "Lithos holding",
+      "kind": "contract",
+      "match": {
+        "address": "WvonkGz7pj74cH7K3ZQvkwp99FSJVoGwqcqUuGCNMEYRsHscxLxALs2h95uwkx7QAyWv1xuWa9eedFUKmVKRVHrJDjis475EsFsf7Xw7mS689A5VeZMeRTBCQZyDMA3E6N7AKzANMwbjDnMPySLLsqC74dZhvY59bBE8ZCoxq4niuNp6cjVYh82xWKBuh3sps"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/RollupContracts.scala",
+      "note": "Holding guard. Each find pays the public pool share of LIT here. Holding logic is a context variable, not a box."
+    },
+    {
+      "name": "Lithos miner dictionary",
+      "kind": "contract",
+      "match": {
+        "token": "ff9b0d78e6705b3d55936b22b668761f484524a99fa1a7c6e9f7cd75119a1bbd"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/LFSMHelpers.scala",
+      "note": "MD_TOKEN_MAINNET, emission 1. One dictionary box."
+    },
+    {
+      "name": "Lithos miner data",
+      "kind": "contract",
+      "match": {
+        "address": "6r333qYnughofT9yZTC3XdwbKcKXZu4evEe4P7K7ckXyizWY7X3gwPUi9Gjy3s9WEEX7jPKsLmtQXTos8Px3VqDRSYiiQxbH5uxVcRdH4w"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/DictionaryContracts.scala",
+      "note": "MinerData guard. Each box holds its own data NFT, including MD_GENESIS_ID_MAINNET. The logic script is a context variable, not a box."
+    },
+    {
+      "name": "Lithos fraud proof control",
+      "kind": "contract",
+      "match": {
+        "token": "0001bb75d59f66c3d563576c51bfaa8ea316ee23b4d52f3f139a4f00df19fe62"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/RollupContracts.scala",
+      "note": "FP_TOKEN_MAINNET, emission 1. FP_Control_Mainnet. The fraud-proof scripts are not separate addresses yet."
+    }
+  ]
+}

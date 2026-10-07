@@ -6,7 +6,7 @@
   "repo": "https://github.com/Lithos-Protocol/Lithos-Client",
   "category": "dex",
   "by": "ergoscan",
-  "note": "LithosDex ERG/LIT pool. The pool NFT names the live box.",
+  "note": "LithosDex ERG/LIT pool, fee vault, and the two provision guards that still hold boxes.",
   "contracts": [
     {
       "name": "Lithos ERG/LIT pool",
@@ -14,8 +14,35 @@
       "match": {
         "token": "c0b21ac51481a5d242809d9b1e189a8baf3803fe347ca01833c1aeb380e6eb29"
       },
-      "source": "chain",
-      "note": "Pool NFT LD-POOL, emission 1. The box also holds LIT. Tree head 1bbe10650400040204020404."
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lithosdex/LDHelpers.scala",
+      "note": "POOL_NFT_MAINNET, emission 1. The live box also holds LIT."
+    },
+    {
+      "name": "LithosDex fee vault",
+      "kind": "contract",
+      "match": {
+        "token": "7f45bcbf13b9925c3eef35ff247ae46b80db2e2703ce2a8bfddf294e1e60c2d7"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lithosdex/LDHelpers.scala",
+      "note": "VAULT_NFT_MAINNET, emission 1. LD_FeeVault. The provision logic itself is not a box."
+    },
+    {
+      "name": "LithosDex provision",
+      "kind": "contract",
+      "match": {
+        "address": "5sywJehZP8gTSX4kxHvpYkPbyjf6M4s5wAPhE68fujrs8BPD8oMADXz1ApQwo4yd2P1gUY2xBUZH"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lithosdex/contracts/LDContracts.scala",
+      "note": "Later LD_Provision_Guard. Open boxes from height 1887206. Each box holds one provision token."
+    },
+    {
+      "name": "LithosDex provision previous",
+      "kind": "contract",
+      "match": {
+        "address": "5sywJehZmzKk6wQMwhs2UnvWKnQmGuoH56eszZcJo9xZfwR1Ei3Z58u2PCev6n8uW9ZhjKiVgVjK"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lithosdex/contracts/LDContracts.scala",
+      "note": "Earlier LD_Provision_Guard. Open boxes remain, last created at height 1887187."
     }
   ]
 }
