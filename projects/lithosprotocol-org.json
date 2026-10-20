@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "lithosprotocol-org",
+  "name": "lithosprotocol.org",
+  "category": "other",
+  "by": "project",
+  "contracts": [
+    {
+      "name": "Lithos difficulty accumulator",
+      "kind": "contract",
+      "match": {
+        "address": "EsQq8yFtHsqzGGhkPz6EahgkpEKX5uj6jf6RxwbxR5yHywoiRR63tcn1c5f8L9Mouk1FTrXwR6Qjv5Cwa9LokSeFf9bo5uy3m6vM59wzvZgERBM51d4vBD6dXUscojT8WjwFGjL3qCiNx67D3591WGMKPT2hx33JnYD1TM6rJQbmfjZ6nrTUeTZr4nsfYyFhjCsDabXQmFF4XCUamUkkt5SK6yb7uVBTqEoyEvijYZYgUN28QCd97dRGHpxBV1VU64vJdGKW4CqugMkuxPEqNsutyD5sqG2iwZ4kzQg2BkMZr6kpMeRhtCdsqhfryTxeZb9t8XU2Q62PrBWcHknLofYFY6MSHxzuubvpSERrhaAkvtSPBj53PRhbrqfTqy6Mc8JCPyAmUXujRinDmwYuaLP3vVEnDpw9eUkqrP3QwVgkqQJJxSrcCZ5YLTqo8Fdwkw8vVCqvZnVKTV4cGwRC1NgbgupiZ5Bsnd8ziCbkqNaskHY"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client"
+    }
+  ]
+}
