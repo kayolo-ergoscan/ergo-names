@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema/project.schema.json",
+  "id": "lithosprotocol-org",
+  "name": "lithosprotocol.org",
+  "category": "other",
+  "by": "project",
+  "contracts": [
+    {
+      "name": "Lithos evaluation",
+      "kind": "contract",
+      "match": {
+        "address": "4CXJ3oDs6zN1V62Z2JoJjQbgb9f7KR3JtvRXVacGSMoVzfH6nw5mKTaAN8kgaYRRZGSiGU7nZtjv9qUYap8SWQyxQm4MB7CgTaEuSBuMCbvDt6iSpN7p2gPXw7KyysxdajAqsbnr1yy2jzq6Go7tNsnJu4V7vNuQfPdPq6FgbLzX6thqeZ3WL9929sWcHxX7ZfdmYZw1cB6vuzeaHGn2J4bbqZ1W2CunzfrvLG3i1dbko8S6cqtYkPMMB9i71NCRJDtUQcrushyYurCeUbxWaFhKjiJQj9yopJE8fFuU1XZWc2o2q5cn4KQReb3F3fE3mXVc2UUGpshZ4A8os429SMv6xxHvvzz33wDAgXvE93m8jHq7CBUtndoWP7mR43edsX31vRFmYNUVqf9y7Hxmd9SLHyFdQYxGskCjiM9x9ZrzCS1a48aaRMMoGLqLjA3cKzwL3GaN5hwd6BWrr8tHZRgUXsHwhesnp6HmsqtSF7Jec4eD2ELT1bpZ1appMe6GihNWs2uXCEWNYGA61HoxzcWRK58x3Am13w4zG9oqJLS8f4SsEejSFy8uUCuuejtZERZEiVaj9iUoLd7KjSyNydvas7bRrh69YEmq8nJTqv9HYbD67nZKR8CUqi4U48xWWp3ai5VZxnCK8vXzDiSiA6XGwGzvKcrtvkvYPzHMjBdmas4LZgkrwnt4VVoyEp6Mva1BDuY3nwULBRiYVoNg9iM7K7D4Npa1QYatzj6gzDGVxbWPjLaoMtcepo3sdQaGhFnoS2UwL6hormpLBvtiWcDsxCJdo1idAZ4v"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client"
+    }
+  ]
+}
