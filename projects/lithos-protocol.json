@@ -5,8 +5,11 @@
   "url": "https://lithos.work",
   "repo": "https://github.com/Lithos-Protocol/Lithos-Client",
   "category": "other",
-  "by": "ergoscan",
-  "note": "Mainnet boxes of the mining protocol. Scripts that only ride in a context variable are not addresses.",
+  "by": "project",
+  "maintainers": [
+    "K-Singh"
+  ],
+  "note": "Mainnet boxes of the mining protocol. Evaluation, payout and difficulty forwards came from the project.",
   "contracts": [
     {
       "name": "Lithos emission",
@@ -79,6 +82,42 @@
       },
       "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/lfsm/contracts/RollupContracts.scala",
       "note": "FP_TOKEN_MAINNET, emission 1. FP_Control_Mainnet. The fraud-proof scripts are not separate addresses yet."
+    },
+    {
+      "name": "Lithos evaluation",
+      "kind": "contract",
+      "match": {
+        "address": "4CXJ3oDs6zN1V62Z2JoJjQbgb9f7KR3JtvRXVacGSMoVzfH6nw5mKTaAN8kgaYRRZGSiGU7nZtjv9qUYap8SWQyxQm4MB7CgTaEuSBuMCbvDt6iSpN7p2gPXw7KyysxdajAqsbnr1yy2jzq6Go7tNsnJu4V7vNuQfPdPq6FgbLzX6thqeZ3WL9929sWcHxX7ZfdmYZw1cB6vuzeaHGn2J4bbqZ1W2CunzfrvLG3i1dbko8S6cqtYkPMMB9i71NCRJDtUQcrushyYurCeUbxWaFhKjiJQj9yopJE8fFuU1XZWc2o2q5cn4KQReb3F3fE3mXVc2UUGpshZ4A8os429SMv6xxHvvzz33wDAgXvE93m8jHq7CBUtndoWP7mR43edsX31vRFmYNUVqf9y7Hxmd9SLHyFdQYxGskCjiM9x9ZrzCS1a48aaRMMoGLqLjA3cKzwL3GaN5hwd6BWrr8tHZRgUXsHwhesnp6HmsqtSF7Jec4eD2ELT1bpZ1appMe6GihNWs2uXCEWNYGA61HoxzcWRK58x3Am13w4zG9oqJLS8f4SsEejSFy8uUCuuejtZERZEiVaj9iUoLd7KjSyNydvas7bRrh69YEmq8nJTqv9HYbD67nZKR8CUqi4U48xWWp3ai5VZxnCK8vXzDiSiA6XGwGzvKcrtvkvYPzHMjBdmas4LZgkrwnt4VVoyEp6Mva1BDuY3nwULBRiYVoNg9iM7K7D4Npa1QYatzj6gzDGVxbWPjLaoMtcepo3sdQaGhFnoS2UwL6hormpLBvtiWcDsxCJdo1idAZ4v"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/resources/rollups/Evaluation.ergo",
+      "note": "Evaluation.ergo. One rollup box during the evaluation window, each with its own rollup NFT."
+    },
+    {
+      "name": "Lithos payout",
+      "kind": "contract",
+      "match": {
+        "address": "3VaP5ZZQFaC1ucEnpUue1ZfgmX2bRamvJezvrVxfxNYmzy4fi4c9XFRmc5k3cfzw1YUFLdRHrX74tvGtpoPvh9NXZQSoSDVUS3DqdurRuVr7z6fkZkNRGZDjMZWHPZzSNRAKETELbx34wi1vqmNAqVMqHsHsTWax2XfdVaphxAsvv5HPbNkHp4tPg3APPzcC54WHuvfDqG8VaftmdZvqxh8G9xhfdd9LnUdFGQYRt3hLx6XcSqHmezE3ZH6KAG8pLbPp6LNVgiLdyFuunf9wA6EixdWxtXRaa7FG7CtARqWaRicNGLAdey9jdL5iwwHzYizAa2J42yjgoSxWF5nNz3Ma7LBdAxoQmfQwDsHWaKrP5ovicNkzMurGY8JUFTPMzR5nyCYfY6zoqce5Riubf4hZdqYUTD4vb4prUiJaFhYaUVwwMP73ZK6V54jiRyJArdseAkvXDnt3BbdFtMPvEswXcg5utsTjbzHmhXbnD7KiiQPLYzMdSXW4Ts5CCbVhqiK5Sd2DQbhTi3yvpdbQk1XZp9gienjRVkYT6kGnnnzGQXBVN1ffv1jVBTZ6b1TFqMkC39R4cChPHQiYh7gXyBjFHo2vTdTAWbUpHjjqu6HafRsawpaAtqrv1n73N2MhvmDgsgq9HP1KeHoc9qMbVTRznf3tHSLp2s4NaP3WhukTcECzPZ75BEStM1xzTy4BamkV2DCS44Fx3tMiW7CQkfPDw3o62jMRUBof6rQMHgsexwrHVfKzAbhwTCY5hNaxgXEVGjogz6Pin8P29dmnRNm9qosShogi6To6hMUXG1aFLFjBTwhprJ3L2JRfaYWEC41un66ZjPvExQaW65htdyACjKBsL74xFm6LmRs5XXAzctP23y3dMKZokCQttH87kBwMh8MCnAsv6Vba3cu8TiYiBJTdJG4K4dz4F7Yy3AC3VisGHcZ91UNPcfAQxb2wvp65CYXMiiapV5tq3FXrpNqpDuRwnkxAeVPcYW2Qm1qHQQcPpC2ZdiXEtFJAXcUCKnFHuYkoXCPfh4tg1P9zNFeSu6ntjkvfru3V6mmukBmupinCzr2Eo48gHj19E49ShwLszqqhrCQXcWRK7HTgmjS5xCfC5AcxaZW3fQCMELLSAmw6othTs7iusf84SjqvwfMZshtpaeiDBMTU6WvJ9iNhPbdtKKjA8vhE6bfNLVGtFgx6xepxq36mYYZpB3dVxoQpYN5WcsLXtmfLFJB5Nx7FG9eMbgLSPJLLcKo4UidBkmQfo7VxJZGGqyZQa29eGZf3YRd19J4GgxtRyXKDJ61x6mTxFdMuEWsiehPD7B2V5RVDtTUUz7MvZUbCpyk2vLxnPf5euKvQ7hkxohvvkLMwAhYn3pFudWsubNG42BHezbNpwPPtm1o8aAhbNktdrZgXPXV6WNMkHkmzG4H7LRguwBs1n132Tz7WZd5CnkREw3WDWwfSiSYkQAxm2SxX3ahnGx2aSk2V2NuNPShbGfdCHzHDUCLwn4wQ1cRd5VUTVwdrQwzYj6vZwuE3LiPd4nfRMzhMus5Y2Q4HPLHabzY1MDi2PU4uaHsPWZF9SHt6zDMoj88U4zddQLHJMBe47hjwT1nxRymibX4eZCJ1JxrF7cvtcPh7z2LGP6kVZmNySF2tRHcHdddPdPNuXTmwnQMyX8iAU515XU9z8n9NmQPXhfEKUT14AZfiyM2mws5SA8cXYEzQyTqy6fYbk8s8Cwe5FoKpF3cNuEeq4"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/resources/rollups/Payout.ergo",
+      "note": "Payout.ergo. One rollup box during the payout window, each with its own rollup NFT."
+    },
+    {
+      "name": "Lithos difficulty accumulator",
+      "kind": "contract",
+      "match": {
+        "token": "6516505cb7361ce03673b1d58e73ede03a813edb15aa1b4bc5b0afd7c70bb03a"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/scala/forwards/DFHelpers.scala",
+      "note": "ACC_NFT_MAINNET, emission 1. DF_Accumulator: the difficulty ring. The submitted address is the current box."
+    },
+    {
+      "name": "Lithos difficulty position",
+      "kind": "contract",
+      "match": {
+        "address": "4CXJ3p1U7RhyHpuYWB3KRqrWyB5XLvt8rqWdh2dPNG7tgjeP6RjERv1t1dj1ufYhsUwcjjKfhfb8t7boCzd72fcqeJywFn5u8NUjwof8Q7wiM2C1DLC48Tm3LS1piUQXGmS6DqwQMypBYP8hdZ7uHn9hcHERj2QToxhpq3xgcm4VtLtEhZ2HYYYbPDGdDCmDicHSSAeafLAsj5McYh4thXi4csJfjdGQPeAe2w5ePNxQb5kGyD75KX447NU4koQ1sN5Ld3EAPX7qFXwbjVEU2EJTJQ9qn7uDbjbh7hKQk6qNBQd1NWV9yUc93aBKwh8Nabnq6RvFPC5JTbzRKkkH1exZv27j4cm8zY6oTafDqu35eWPfQnhMdSz5EwMKPTUrGNKhtkWhAmfb7nrLD6362pDqLFjhcoefqACUz2UvmEW2YoZHdm53Rp5eQUifphSvdscm3NGTGDBSCJy1WNLQad63ij17sHhppAgTwyTXghBAtvzFHycER9UCxYT7kwDe9MQuwvthpySS5QbyuWDTNtjAPsFPGBAtYJMNAEVoWrw6uFt8oJLArQFSwNyYKPHa57qVE5fHx3WGXYhuNRLtDNm8UJherQGKKqF6TtNF2FM6zrstdrgDFJqXapNY3hVnYmHssmtJiMNgywu1zzeSngBB2g6xu8j3uMSz2CsoUYTuDCjfFWMwwWVEMTysBXgvC8M8J2m2AfAkckf91hMtb2kA8TRFk1kPoYmAJLBtdPcoGidmLsvf1m6fa4EgNsVEMB7wdHj5RUuAuEde8V9GDrmx5uQH9RBcRu3Z"
+      },
+      "source": "https://github.com/Lithos-Protocol/Lithos-Client/blob/master/lithos-lib/src/main/resources/forwards/DF_Position.ergo",
+      "note": "DF_Position.ergo. A filled difficulty forward: long and short keys, strike, notional and window."
     }
   ]
 }
