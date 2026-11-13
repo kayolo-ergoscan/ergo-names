@@ -20,6 +20,15 @@
         "address": "88dhgzEuTXaRp6WD5jWZSnXzBbA44g1xSMk6Xv2r6Cey8snSH78S6ZbWjP24yyPTDCCZByLpNXXe6NnN"
       },
       "source": "chain"
+    },
+    {
+      "name": "Nano Pool payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9fkPXhqxsPotshYhy87HKdJ5Q9ho2Zw8d3aioznoggijeAKRPsJ"
+      },
+      "source": "chain",
+      "note": "Wallet. Funded by the Nano Pool miner reward locks Xe6NnN and WPp2c6 (791 and 11 of its last 800 incoming txs, Nov 2026); pays miners in batches."
     }
   ],
   "url": "https://ergo.nanopool.org"

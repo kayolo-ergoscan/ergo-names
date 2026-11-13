@@ -20,6 +20,15 @@
         "address": "88dhgzEuTXaU9uJYAV8HTNzQL5pZrf7DovupdeBVm6msBjzLQjor8cp8DXaruQvyrAij6YxZAzzmbj8n"
       },
       "source": "chain"
+    },
+    {
+      "name": "666 Pool payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9hAUYkfG92Sq3ywozRQrVR4XDRMchEuHWuH8Z2RVCsV1L3Q7GCY"
+      },
+      "source": "chain",
+      "note": "Wallet. Funded by the 666 Pool miner reward lock zmbj8n (709 of its last 1224 incoming txs, Nov 2026); pays miners in batches."
     }
   ],
   "url": "https://www.666pool.com"

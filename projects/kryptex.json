@@ -12,6 +12,15 @@
         "address": "88dhgzEuTXaTnTZomXPfuJ67oYJPbrv17yNkLjN6Nj8HxZEUf2iAdiv9gTqmnKKa2i75zmUtDnPQovBb"
       },
       "source": "chain"
+    },
+    {
+      "name": "Kryptex payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9hys3Fen5DHoRoYdA7XpSKdSJkGP1iZwb8jnYgfiaPanyKcV7tQ"
+      },
+      "source": "chain",
+      "note": "Wallet. Funded by the Kryptex miner reward lock (632 of its last 800 incoming txs, Nov 2026); pays miners in batches."
     }
   ],
   "url": "https://pool.kryptex.com/erg"

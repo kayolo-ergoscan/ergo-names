@@ -12,6 +12,15 @@
         "address": "88dhgzEuTXaQ2HPUskY3hvgMA5uCbQWwZNPbMC1Hem9zM2V9U7KMah7LYWS4Hm4WECGuc22nofdQbHbY"
       },
       "source": "chain"
+    },
+    {
+      "name": "Wooly Pooly payout wallet",
+      "kind": "wallet",
+      "match": {
+        "address": "9guJ7gGy7LjRoxxN6Do3EFczq54XNvb75bDUxTfRUGsY72MwAuG"
+      },
+      "source": "chain",
+      "note": "Wallet. Funded by the Wooly Pooly miner reward lock (2864 of its last 3000 incoming txs, Nov 2026); pays miners in batches."
     }
   ],
   "url": "https://woolypooly.com"
